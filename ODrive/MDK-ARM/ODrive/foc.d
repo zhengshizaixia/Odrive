@@ -1,0 +1,13 @@
+odrive\foc.o: ..\User\Framework\FOC.c
+odrive\foc.o: ..\User\Framework\FOC.h
+odrive\foc.o: D:\嵌入式软件\Keil5\ARM\ARMCC\Bin\..\include\stdint.h
+odrive\foc.o: D:\嵌入式软件\Keil5\ARM\ARMCC\Bin\..\include\math.h
+odrive\foc.o: ..\Drivers\CMSIS\DSP\Include\arm_math.h
+odrive\foc.o: ../Drivers/CMSIS/Include/core_cm4.h
+odrive\foc.o: ../Drivers/CMSIS/Include/cmsis_version.h
+odrive\foc.o: ../Drivers/CMSIS/Include/cmsis_compiler.h
+odrive\foc.o: ../Drivers/CMSIS/Include/cmsis_armcc.h
+odrive\foc.o: D:\嵌入式软件\Keil5\ARM\ARMCC\Bin\..\include\string.h
+odrive\foc.o: D:\嵌入式软件\Keil5\ARM\ARMCC\Bin\..\include\stdio.h
+odrive\foc.o: ..\User\RTT\SEGGER_RTT.h
+odrive\foc.o: ..\User\RTT\SEGGER_RTT_Conf.h

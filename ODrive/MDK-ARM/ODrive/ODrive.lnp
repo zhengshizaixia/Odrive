@@ -2,6 +2,7 @@
 "odrive\startup_stm32f405xx.o"
 "odrive\main.o"
 "odrive\gpio.o"
+"odrive\tim.o"
 "odrive\stm32f4xx_it.o"
 "odrive\stm32f4xx_hal_msp.o"
 "odrive\stm32f4xx_hal_tim.o"
@@ -20,10 +21,15 @@
 "odrive\stm32f4xx_hal.o"
 "odrive\stm32f4xx_hal_exti.o"
 "odrive\system_stm32f4xx.o"
+"..\Drivers\CMSIS\Lib\ARM\arm_cortexM4lf_math.lib"
 "odrive\appmain.o"
 "odrive\functionmain.o"
 "odrive\mcudrivermain.o"
 "odrive\perdrivermain.o"
+"odrive\foc.o"
+"odrive\svpwm.o"
+"odrive\segger_rtt.o"
+"odrive\segger_rtt_printf.o"
 --library_type=microlib --strict --scatter "ODrive\ODrive.sct"
 --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers
