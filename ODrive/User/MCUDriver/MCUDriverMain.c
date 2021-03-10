@@ -1,8 +1,10 @@
 #include "MCUDriverMain.h"
-
-
 #include "main.h"
 
+#include "TIM1PWM.h"
+#include "TIM3Encoder.h"
+#include "timer.h"
+#include "MotorGPIO.h"
 /*************************************************************
 ** Function name:      MCUDriverMain_Init
 ** Descriptions:       芯片初始化
@@ -14,8 +16,9 @@
 *************************************************************/
 void MCUDriverMain_Init(void)
 {
-
-
+	SetMotorEnable(1);
+	TIM1_Init();
+	TimerEncoderInit();
 }
 
 /*************************************************************
@@ -29,6 +32,11 @@ void MCUDriverMain_Init(void)
 *************************************************************/
 void MCUDriverMain_Loop(void)
 {
+//	RUN_BY_LIMIT_BLOCK(200,
+//		printf("1:%d\r\n",GetTimer3EncoderCnt());
+//		printf("2:%f\r\n",GetTimerEncoderAngle());
+//	)
+	
 
 }
 

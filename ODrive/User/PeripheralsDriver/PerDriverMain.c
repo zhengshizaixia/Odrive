@@ -1,4 +1,10 @@
 #include "PerDriverMain.h"
+
+#include "SvpwmConfig.h"
+
+
+
+#include "timer.h"
 /*************************************************************
 ** Function name:      PerDriverMain_Init
 ** Descriptions:       外设初始化
@@ -25,7 +31,9 @@ void PerDriverMain_Init(void)
 *************************************************************/
 void PerDriverMain_Loop(void)
 {
-
+	RUN_BY_LIMIT_BLOCK(200,
+		//MotorSvpwmConfigTest();
+	)
 }
 
 

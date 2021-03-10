@@ -38,6 +38,7 @@ typedef Svpwm_Struct *PSvpwm_Struct;
 ** Descriptions:        初始化一个SVPMW对象
 ** Input parameters:    x:对象名字
 **                      xTs：SVPWM波形周期 单位us 建议 50
+**                      xudc：母线电压 单位V 
 **                      xSetChannelAHighLeaveTime_us：设置A相高电平时间
 **                      xSetChannelBHighLeaveTime_us：设置B相高电平时间
 **                      xSetChannelCHighLeaveTime_us：设置C相高电平时间

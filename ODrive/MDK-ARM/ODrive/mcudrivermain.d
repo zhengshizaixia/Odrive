@@ -1,6 +1,6 @@
 odrive\mcudrivermain.o: ..\User\MCUDriver\MCUDriverMain.c
 odrive\mcudrivermain.o: ..\User\MCUDriver\MCUDriverMain.h
-odrive\mcudrivermain.o: D:\嵌入式软件\Keil5\ARM\ARMCC\Bin\..\include\stdint.h
+odrive\mcudrivermain.o: D:\SoftWare\Keil\ARM\ARMCC\Bin\..\include\stdint.h
 odrive\mcudrivermain.o: ../Core/Inc/main.h
 odrive\mcudrivermain.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h
 odrive\mcudrivermain.o: ../Core/Inc/stm32f4xx_hal_conf.h
@@ -16,7 +16,7 @@ odrive\mcudrivermain.o: ../Drivers/CMSIS/Include/mpu_armv7.h
 odrive\mcudrivermain.o: ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h
 odrive\mcudrivermain.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h
 odrive\mcudrivermain.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h
-odrive\mcudrivermain.o: D:\嵌入式软件\Keil5\ARM\ARMCC\Bin\..\include\stddef.h
+odrive\mcudrivermain.o: D:\SoftWare\Keil\ARM\ARMCC\Bin\..\include\stddef.h
 odrive\mcudrivermain.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h
 odrive\mcudrivermain.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h
 odrive\mcudrivermain.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio_ex.h
@@ -31,3 +31,9 @@ odrive\mcudrivermain.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h
 odrive\mcudrivermain.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h
 odrive\mcudrivermain.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h
 odrive\mcudrivermain.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h
+odrive\mcudrivermain.o: ..\User\MCUDriver\TIM1PWM.h
+odrive\mcudrivermain.o: ..\User\MCUDriver\TIM3Encoder.h
+odrive\mcudrivermain.o: D:\SoftWare\Keil\ARM\ARMCC\Bin\..\include\stdio.h
+odrive\mcudrivermain.o: ..\User\MCUDriver\timer.h
+odrive\mcudrivermain.o: D:\SoftWare\Keil\ARM\ARMCC\Bin\..\include\stdbool.h
+odrive\mcudrivermain.o: ..\User\MCUDriver\MotorGPIO.h

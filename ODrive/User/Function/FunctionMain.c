@@ -1,4 +1,8 @@
 #include "FunctionMain.h"
+
+#include "AngleCalibrationFunc.h"
+
+
 /*************************************************************
 ** Function name:      FunctionMain_Init
 ** Descriptions:       功能初始化
@@ -10,8 +14,7 @@
 *************************************************************/
 void FunctionMain_Init(void)
 {
-
-
+	AngleCalibrationFunc_Init();
 }
 
 /*************************************************************

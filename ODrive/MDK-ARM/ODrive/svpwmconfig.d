@@ -1,0 +1,15 @@
+odrive\svpwmconfig.o: ..\User\PeripheralsDriver\SvpwmConfig.c
+odrive\svpwmconfig.o: ..\User\PeripheralsDriver\SvpwmConfig.h
+odrive\svpwmconfig.o: D:\SoftWare\Keil\ARM\ARMCC\Bin\..\include\stdint.h
+odrive\svpwmconfig.o: ..\User\Framework\Svpwm.h
+odrive\svpwmconfig.o: ..\User\MCUDriver\TIM1PWM.h
+odrive\svpwmconfig.o: ..\User\MCUDriver\TIM3Encoder.h
+odrive\svpwmconfig.o: D:\SoftWare\Keil\ARM\ARMCC\Bin\..\include\stdio.h
+odrive\svpwmconfig.o: ..\User\MCUDriver\MotorGPIO.h
+odrive\svpwmconfig.o: ..\Drivers\CMSIS\DSP\Include\arm_math.h
+odrive\svpwmconfig.o: ../Drivers/CMSIS/Include/core_cm4.h
+odrive\svpwmconfig.o: ../Drivers/CMSIS/Include/cmsis_version.h
+odrive\svpwmconfig.o: ../Drivers/CMSIS/Include/cmsis_compiler.h
+odrive\svpwmconfig.o: ../Drivers/CMSIS/Include/cmsis_armcc.h
+odrive\svpwmconfig.o: D:\SoftWare\Keil\ARM\ARMCC\Bin\..\include\string.h
+odrive\svpwmconfig.o: D:\SoftWare\Keil\ARM\ARMCC\Bin\..\include\math.h

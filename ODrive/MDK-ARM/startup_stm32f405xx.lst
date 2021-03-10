@@ -818,11 +818,11 @@ ARM Macro Assembler    Page 13
               00000000 
 Command Line: --debug --xref --diag_suppress=9931 --cpu=Cortex-M4.fp.sp --apcs=
 interwork --depend=odrive\startup_stm32f405xx.d -oodrive\startup_stm32f405xx.o 
--I.\RTE\_ODrive -ID:\«∂»Î Ω»Ìº˛\Keil5\ARM\CMSIS\5.7.0\CMSIS\Core\Include -ID:\«
-∂»Î Ω»Ìº˛\Keil5\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Inc
-lude --predefine="__MICROLIB SETA 1" --predefine="__UVISION_VERSION SETA 531" -
--predefine="_RTE_ SETA 1" --predefine="STM32F405xx SETA 1" --predefine="_RTE_ S
-ETA 1" --list=startup_stm32f405xx.lst startup_stm32f405xx.s
+-I.\RTE\_ODrive -ID:\SoftWare\Keil\ARM\CMSIS\5.7.0\CMSIS\Core\Include -ID:\Soft
+Ware\Keil\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include -
+-predefine="__MICROLIB SETA 1" --predefine="__UVISION_VERSION SETA 533" --prede
+fine="_RTE_ SETA 1" --predefine="STM32F405xx SETA 1" --predefine="_RTE_ SETA 1"
+ --list=startup_stm32f405xx.lst startup_stm32f405xx.s
 
 
 

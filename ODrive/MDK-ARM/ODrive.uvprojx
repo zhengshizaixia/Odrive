@@ -10,7 +10,7 @@
       <TargetName>ODrive</TargetName>
       <ToolsetNumber>0x4</ToolsetNumber>
       <ToolsetName>ARM-ADS</ToolsetName>
-      <pCCUsed>5060750::V5.06 update 6 (build 750)::.\ARMCC</pCCUsed>
+      <pCCUsed>5060960::V5.06 update 7 (build 960)::.\ARMCC</pCCUsed>
       <uAC6>0</uAC6>
       <TargetOption>
         <TargetCommonOption>
@@ -134,11 +134,11 @@
             <RunIndependent>0</RunIndependent>
             <UpdateFlashBeforeDebugging>1</UpdateFlashBeforeDebugging>
             <Capability>1</Capability>
-            <DriverSelection>4107</DriverSelection>
+            <DriverSelection>4100</DriverSelection>
           </Flash1>
           <bUseTDR>1</bUseTDR>
-          <Flash2>STLink\ST-LINKIII-KEIL_SWO.dll</Flash2>
-          <Flash3></Flash3>
+          <Flash2>Segger\JL2CM3.dll</Flash2>
+          <Flash3>"" ()</Flash3>
           <Flash4></Flash4>
           <pFcarmOut></pFcarmOut>
           <pFcarmGrp></pFcarmGrp>
@@ -339,7 +339,7 @@
               <MiscControls></MiscControls>
               <Define>USE_HAL_DRIVER,STM32F405xx,__FPU_PRESENT = 1U,ARM_MATH_CM4,__CC_ARM,__TARGET_FPU_VFP</Define>
               <Undefine></Undefine>
-              <IncludePath>../Core/Inc;../Drivers/STM32F4xx_HAL_Driver/Inc;../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy;../Drivers/CMSIS/Device/ST/STM32F4xx/Include;../Drivers/CMSIS/Include;..\User\APP;..\User\Function;..\User\MCUDriver;..\User\PeripheralsDriver;..\User\Framework;..\User\RTT;..\Drivers\CMSIS\DSP\Include</IncludePath>
+              <IncludePath>../Core/Inc;       ../Drivers/STM32F4xx_HAL_Driver/Inc;       ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy;       ../Drivers/CMSIS/Device/ST/STM32F4xx/Include;       ../Drivers/CMSIS/Include;       ..\User\APP;       ..\User\Function;       ..\User\MCUDriver;       ..\User\PeripheralsDriver;       ..\User\Framework;       ..\User\RTT;       ..\Drivers\CMSIS\DSP\Include</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -393,6 +393,11 @@
         <Group>
           <GroupName>Application/User/Core</GroupName>
           <Files>
+            <File>
+              <FileName>README.txt</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\README.txt</FilePath>
+            </File>
             <File>
               <FileName>main.c</FileName>
               <FileType>1</FileType>
@@ -504,14 +509,14 @@
           <GroupName>Drivers/CMSIS</GroupName>
           <Files>
             <File>
-              <FileName>system_stm32f4xx.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>../Core/Src/system_stm32f4xx.c</FilePath>
-            </File>
-            <File>
               <FileName>arm_cortexM4lf_math.lib</FileName>
               <FileType>4</FileType>
               <FilePath>..\Drivers\CMSIS\Lib\ARM\arm_cortexM4lf_math.lib</FilePath>
+            </File>
+            <File>
+              <FileName>system_stm32f4xx.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>../Core/Src/system_stm32f4xx.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -543,6 +548,16 @@
               <FileType>5</FileType>
               <FilePath>..\User\Function\FunctionMain.h</FilePath>
             </File>
+            <File>
+              <FileName>AngleCalibrationFunc.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\User\Function\AngleCalibrationFunc.c</FilePath>
+            </File>
+            <File>
+              <FileName>AngleCalibrationFunc.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\User\Function\AngleCalibrationFunc.h</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -558,6 +573,46 @@
               <FileType>5</FileType>
               <FilePath>..\User\MCUDriver\MCUDriverMain.h</FilePath>
             </File>
+            <File>
+              <FileName>TIM1PWM.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\User\MCUDriver\TIM1PWM.c</FilePath>
+            </File>
+            <File>
+              <FileName>TIM1PWM.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\User\MCUDriver\TIM1PWM.h</FilePath>
+            </File>
+            <File>
+              <FileName>TIM3Encoder.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\User\MCUDriver\TIM3Encoder.c</FilePath>
+            </File>
+            <File>
+              <FileName>TIM3Encoder.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\User\MCUDriver\TIM3Encoder.h</FilePath>
+            </File>
+            <File>
+              <FileName>Timer.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\User\MCUDriver\Timer.c</FilePath>
+            </File>
+            <File>
+              <FileName>Timer.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\User\MCUDriver\Timer.h</FilePath>
+            </File>
+            <File>
+              <FileName>MotorGPIO.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\User\MCUDriver\MotorGPIO.c</FilePath>
+            </File>
+            <File>
+              <FileName>MotorGPIO.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\User\MCUDriver\MotorGPIO.h</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -572,6 +627,16 @@
               <FileName>PerDriverMain.h</FileName>
               <FileType>5</FileType>
               <FilePath>..\User\PeripheralsDriver\PerDriverMain.h</FilePath>
+            </File>
+            <File>
+              <FileName>SvpwmConfig.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\User\PeripheralsDriver\SvpwmConfig.c</FilePath>
+            </File>
+            <File>
+              <FileName>SvpwmConfig.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\User\PeripheralsDriver\SvpwmConfig.h</FilePath>
             </File>
           </Files>
         </Group>
@@ -649,11 +714,6 @@
     <Layers>
       <Layer>
         <LayName>&lt;Project Info&gt;</LayName>
-        <LayDesc></LayDesc>
-        <LayUrl></LayUrl>
-        <LayKeys></LayKeys>
-        <LayCat></LayCat>
-        <LayLic></LayLic>
         <LayTarg>0</LayTarg>
         <LayPrjMark>1</LayPrjMark>
       </Layer>
