@@ -25,7 +25,8 @@
 void TimerEncoderInit(void);
 void TimerEncoderReset(void);
 int32_t GetTimer3EncoderCnt(void);
-float GetTimerEncoderAngle(void);
+void SetTimer3EncoderCnt(int32_t cnt);
+float GetTimer3EncoderAngle(void);
 
 #endif //__TIM3Encoder_H__
 

@@ -1,7 +1,7 @@
 #include "FunctionMain.h"
 
 #include "AngleCalibrationFunc.h"
-
+#include "FOCConfig.h"
 
 /*************************************************************
 ** Function name:      FunctionMain_Init
@@ -15,6 +15,7 @@
 void FunctionMain_Init(void)
 {
 	AngleCalibrationFunc_Init();
+		FOCConfig_Init();
 }
 
 /*************************************************************

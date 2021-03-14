@@ -23,6 +23,8 @@ odrive\stm32f4xx_it.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_exti.h
 odrive\stm32f4xx_it.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h
 odrive\stm32f4xx_it.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h
 odrive\stm32f4xx_it.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h
+odrive\stm32f4xx_it.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc.h
+odrive\stm32f4xx_it.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc_ex.h
 odrive\stm32f4xx_it.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h
 odrive\stm32f4xx_it.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h
 odrive\stm32f4xx_it.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h
@@ -33,3 +35,5 @@ odrive\stm32f4xx_it.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.
 odrive\stm32f4xx_it.o: ../Core/Inc/stm32f4xx_it.h
 odrive\stm32f4xx_it.o: ..\User\MCUDriver\Timer.h
 odrive\stm32f4xx_it.o: D:\SoftWare\Keil\ARM\ARMCC\Bin\..\include\stdbool.h
+odrive\stm32f4xx_it.o: ..\User\MCUDriver\ADC1.h
+odrive\stm32f4xx_it.o: ..\User\PeripheralsDriver\FOCConfig.h

@@ -5,7 +5,7 @@
 #include "TIM3Encoder.h"
 #include "TIM1PWM.h"
 #include "main.h"
-
+#include "GPIONVIC.h"
 
 
 /*************************************************************
@@ -21,21 +21,24 @@ void Motor1AngleCalibration(void)
 	//1.使能电机
 	SetMotorEnable(1);
 	//2.电机旋转至a轴
-	SetTIM1Channel1HighLeaveTime_us(70);
-	SetTIM1Channel2HighLeaveTime_us(40);
-	SetTIM1Channel3HighLeaveTime_us(40);
+	SetTIM1Channel1HighLeaveTime_us(52);
+	SetTIM1Channel2HighLeaveTime_us(48);
+	SetTIM1Channel3HighLeaveTime_us(48);
 	HAL_Delay(500);
 	//3.读取角度
 	for (uint8_t i = 0; i < 10; i++) {
 		TimerEncoderReset();
-		HAL_Delay(100);
+		HAL_Delay(50);
 	}
 	//4.电机失能
 	SetTIM1Channel1HighLeaveTime_us(0);
 	SetTIM1Channel2HighLeaveTime_us(0);
 	SetTIM1Channel3HighLeaveTime_us(0);
 	SetMotorEnable(0);
-    while(1);
+	GPIONVIC_Init();
+	HAL_Delay(2000);
+	Timer1ITEnable();
+    //while(1);
 }
 
 /*************************************************************
@@ -49,7 +52,7 @@ void Motor1AngleCalibration(void)
 *************************************************************/
 void AngleCalibrationFunc_Init(void)
 {
-    //Motor1AngleCalibration();
+    Motor1AngleCalibration();
 }
 
 

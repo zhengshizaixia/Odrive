@@ -30,8 +30,6 @@ FOC结构体
 */
 struct SFOC_Struct
 {
-    /* data */
-    uint32_t startTime;
     float cycle;
 
     uint8_t isEnable; //电机使能
@@ -42,6 +40,7 @@ struct SFOC_Struct
     float angle;        //角度
     float radian;       //弧度
 
+    uint8_t iNum;         //a 电流采样个数
     float ia;           //a 相实际电流
     float ib;           //b 相实际电流
 	float ic;           //b 相实际电流
@@ -75,9 +74,8 @@ typedef FOC_Struct *PFOC_Struct;
 ** Returned value:      None
 ** Remarks:             None
 *************************************************************/
-#define FOC_EXPORT(x,xCycle,xpolePairs,xSetEnable,xGetEncoderAngle,xGetSVPWMSector,xGetPreCurrent,xSvpwmGenerate)    \
+#define FOC_EXPORT(x,xCycle,xpolePairs,xiNum,xSetEnable,xGetEncoderAngle,xGetSVPWMSector,xGetPreCurrent,xSvpwmGenerate)    \
 FOC_Struct x = {                            \
-    .startTime = 0,                         \
     .cycle = xCycle,                        \
     .isEnable = 0,                          \
     .polePairs = xpolePairs,                \
@@ -85,6 +83,7 @@ FOC_Struct x = {                            \
     .tariq = 0.0,                           \
     .angle = 0.0,                           \
     .radian = 0.0,                          \
+    .iNum = xiNum,                          \
     .ia = 0.0,                              \
     .ib = 0.0,                              \
     .ic = 0.0,                              \
@@ -104,48 +103,11 @@ FOC_Struct x = {                            \
 };
 
 
-
-
-/*************************************************************
-** Function name:       WS2812_TIMEBASE
-** Descriptions:        时基,放在周期为1ms的函数里面执行
-** Input parameters:    None
-** Output parameters:   None
-** Returned value:      None
-*************************************************************/
-#define FOC_TIMEBASE(ms)                \
-        gFoc_TimeCNT+= ms
-
-/*************************************************************
-** Function name:       WS2812_GETTIME
-** Descriptions:        获取起始时间
-** Input parameters:    None
-** Output parameters:   None
-** Returned value:      (uint32_t)起始时间
-*************************************************************/
-#define FOC_GETTIME(void)                        \
-    gFoc_TimeCNT
-
-/*************************************************************
-** Function name:       WS2812_TIMEOUT
-** Descriptions:        检查超时
-** Input parameters:    timeOut：(uint32_t)超时时间
-**                      startTime:(uint32_t)开始的时间
-** Output parameters:   None
-** Returned value:      false,未超时，true，超时
-*************************************************************/
-#define FOC_TIMEOUT(timeOut,startTime)                \
-    ((gFoc_TimeCNT - startTime) >= timeOut ? 1 : 0)
-
-
-
-
-
-void FOCCycle(PFOC_Struct pFOC);
+void FocContorl(PFOC_Struct pFOC);
 void SetCurrentPIDTar(PFOC_Struct pFOC,float tarid,float tariq);
 void SetCurrentPIDParams(PFOC_Struct pFOC,float kp,float ki,float kd,float outMax);
 void SetFocEnable(PFOC_Struct pFOC,uint8_t isEnable);
-
+void FOCPrintf(PFOC_Struct pFOC);
 
 
 

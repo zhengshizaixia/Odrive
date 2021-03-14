@@ -24,6 +24,8 @@ odrive\mcudrivermain.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_exti.h
 odrive\mcudrivermain.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h
 odrive\mcudrivermain.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h
 odrive\mcudrivermain.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h
+odrive\mcudrivermain.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc.h
+odrive\mcudrivermain.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc_ex.h
 odrive\mcudrivermain.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h
 odrive\mcudrivermain.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h
 odrive\mcudrivermain.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h
@@ -37,3 +39,4 @@ odrive\mcudrivermain.o: D:\SoftWare\Keil\ARM\ARMCC\Bin\..\include\stdio.h
 odrive\mcudrivermain.o: ..\User\MCUDriver\timer.h
 odrive\mcudrivermain.o: D:\SoftWare\Keil\ARM\ARMCC\Bin\..\include\stdbool.h
 odrive\mcudrivermain.o: ..\User\MCUDriver\MotorGPIO.h
+odrive\mcudrivermain.o: ..\User\MCUDriver\GPIONVIC.h

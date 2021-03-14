@@ -9,7 +9,7 @@
 
 
 
-#define U 0.5f
+#define U 1.0f
 
 float motorAngle;
 
@@ -35,7 +35,8 @@ float GetMotorUβ(void)
 SVPWM_EXPORT(gMotor,100.0f,12.0f,
                 SetTIM1Channel1HighLeaveTime_us,
                 SetTIM1Channel2HighLeaveTime_us,
-                SetTIM1Channel3HighLeaveTime_us)
+                SetTIM1Channel3HighLeaveTime_us,
+				SetTIM1Channel4HighLeaveTime_us)
 
 
 /*************************************************************
@@ -74,7 +75,8 @@ uint8_t GetMotorSVPWMSector(void)
 void MotorSvpwmConfigTest(void)
 {
 	SetMotorEnable(1);
-	motorAngle = GetTimerEncoderAngle() * 4.0f;
+	motorAngle = GetTimer3EncoderAngle() * 7.0f;
+	printf("motorAngle:%f\r\n",motorAngle);
 	MotorSvpwmGenerate(GetMotorUα(),GetMotorUβ());
 }
 

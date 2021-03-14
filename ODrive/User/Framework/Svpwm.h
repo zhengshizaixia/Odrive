@@ -28,6 +28,7 @@ struct SSvpwm_Struct
     void (*SetChannelAHighLeaveTime_us)(float time); //一个SVPWM周期内A相绕组高电平时间(中央对齐方式)
     void (*SetChannelBHighLeaveTime_us)(float time); //一个SVPWM周期内B相绕组高电平时间(中央对齐方式)
     void (*SetChannelCHighLeaveTime_us)(float time); //一个SVPWM周期内C相绕组高电平时间(中央对齐方式)
+    void (*SetChannelDHighLeaveTime_us)(float time); //一个SVPWM周期内C相绕组高电平时间(中央对齐方式)
 };
 typedef struct SSvpwm_Struct Svpwm_Struct;
 typedef Svpwm_Struct *PSvpwm_Struct;
@@ -46,7 +47,7 @@ typedef Svpwm_Struct *PSvpwm_Struct;
 ** Returned value:      None
 ** Remarks:             None
 *************************************************************/
-#define SVPWM_EXPORT(x,xTs,xudc,xSetChannelAHighLeaveTime_us,xSetChannelBHighLeaveTime_us,xSetChannelCHighLeaveTime_us)     \
+#define SVPWM_EXPORT(x,xTs,xudc,xSetChannelAHighLeaveTime_us,xSetChannelBHighLeaveTime_us,xSetChannelCHighLeaveTime_us,xSetChannelDHighLeaveTime_us)     \
 Svpwm_Struct x = {                      \
     .uα = 0,                            \
     .uβ = 0,                            \
@@ -67,6 +68,7 @@ Svpwm_Struct x = {                      \
     .SetChannelAHighLeaveTime_us = xSetChannelAHighLeaveTime_us,            \
     .SetChannelBHighLeaveTime_us = xSetChannelBHighLeaveTime_us,            \
     .SetChannelCHighLeaveTime_us = xSetChannelCHighLeaveTime_us,            \
+    .SetChannelDHighLeaveTime_us = xSetChannelDHighLeaveTime_us,            \
 };
 
 

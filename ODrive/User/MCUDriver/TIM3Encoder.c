@@ -58,11 +58,24 @@ void TimerEncoderReset(void)
 int32_t GetTimer3EncoderCnt(void)
 {
     gSTTimerEncoder.Tim3Cnt += __HAL_TIM_GET_COUNTER(&htim3) - CNTZERO;
-
+	__HAL_TIM_SET_COUNTER(&htim3,CNTZERO);
+	if (gSTTimerEncoder.Tim3Cnt < 0) {
+		gSTTimerEncoder.Tim3Cnt += ENCODERPLUSE;
+	}
     gSTTimerEncoder.Tim3Cnt = gSTTimerEncoder.Tim3Cnt % ENCODERPLUSE;
-    __HAL_TIM_GET_COUNTER(&htim3) = CNTZERO;
-
     return gSTTimerEncoder.Tim3Cnt;
+}
+/*************************************************************
+** Function name:       SetTimer3EncoderCnt
+** Descriptions:        设置Timer3Cnt的值
+** Input parameters:    None
+** Output parameters:   None
+** Returned value:      None
+** Remarks:             None
+*************************************************************/
+void SetTimer3EncoderCnt(int32_t cnt)
+{
+	gSTTimerEncoder.Tim3Cnt = cnt;
 }
 /*************************************************************
 ** Function name:       GetTimerEncoderAngle
@@ -71,7 +84,7 @@ int32_t GetTimer3EncoderCnt(void)
 ** Output parameters:   None
 ** Returned value:      编码器角度
 *************************************************************/
-float GetTimerEncoderAngle(void)
+float GetTimer3EncoderAngle(void)
 {
     gSTTimerEncoder.angle = (float)GetTimer3EncoderCnt() / (float)ENCODERPLUSE * 360.0f;
 
@@ -80,4 +93,3 @@ float GetTimerEncoderAngle(void)
     }
     return gSTTimerEncoder.angle;
 }
-

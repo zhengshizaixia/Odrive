@@ -1,13 +1,12 @@
 #include "FOC.h"
-#include "math.h"
 #include "arm_math.h"
 
 #include "stdio.h"
 #include "SEGGER_RTT.h"
 #include "SEGGER_RTT_Conf.h"
 
-
-#define FOC_SQRT_3 1.732f
+#include "Svpwm.h"
+#define FOC_SQRT_3 1.73205f
 #define FOC_ANGLE_TO_RADIN 0.01745f
 
 
@@ -36,6 +35,9 @@ static void GetElectricalAngle(PFOC_Struct pFOC)
 static void CurrentReconstruction(PFOC_Struct pFOC)
 {
     pFOC->GetPreCurrent(&pFOC->ia,&pFOC->ib,&pFOC->ic);
+	if (pFOC->iNum < 3) {
+        return;
+    }
     switch (pFOC->GetSVPWMSector()) {
         case 1:
             pFOC->ia =0.0f - pFOC->ib - pFOC->ic;
@@ -58,9 +60,6 @@ static void CurrentReconstruction(PFOC_Struct pFOC)
         default:
             break;
     }
-//	printf("5:%f\r\n",pFOC->ia);
-//	printf("6:%f\r\n",pFOC->ib);
-//	printf("7:%f\r\n",pFOC->ic);
 }
 /*************************************************************
 ** Function name:       ClarkeTransform
@@ -131,8 +130,6 @@ static void CurrentPIControlID(PFOC_Struct pFOC)
     if (pFOC->idPID.out < -fabs(pFOC->idPID.outMax)) {
         pFOC->idPID.out = -fabs(pFOC->idPID.outMax);
     }
-//	printf("3:%f\r\n",pFOC->tarid);
-//	printf("4:%f\r\n",pFOC->id);
 }
 /*************************************************************
 ** Function name:       CurrentPIControlIQ
@@ -162,9 +159,6 @@ static void CurrentPIControlIQ(PFOC_Struct pFOC)
     if (pFOC->iqPID.out < -fabs(pFOC->iqPID.outMax)) {
         pFOC->iqPID.out = -fabs(pFOC->iqPID.outMax);
     }
-
-//	printf("1:%f\r\n",pFOC->tariq);
-//	printf("2:%f\r\n",pFOC->iq);
 }
 
 /*************************************************************
@@ -175,9 +169,8 @@ static void CurrentPIControlIQ(PFOC_Struct pFOC)
 ** Returned value:      None
 ** Remarks:             None
 *************************************************************/
-static void FocContorl(PFOC_Struct pFOC)
+void FocContorl(PFOC_Struct pFOC)
 {
-    pFOC->SetEnable( pFOC->isEnable);
     //0.获取电气角度
     GetElectricalAngle(pFOC);
     //1计算实际电流值
@@ -190,28 +183,13 @@ static void FocContorl(PFOC_Struct pFOC)
     //2.做PID闭环
     CurrentPIControlID(pFOC);
     CurrentPIControlIQ(pFOC);
-	// pFOC->iqPID.out = 1;
-	pFOC->idPID.out = 0.0f;
+//	pFOC->iqPID.out = 0.5f;
+//	pFOC->idPID.out = -0.2f;
     //3.计算输出值iα i贝塔
     ParkAntiTransform(pFOC);
     //4.输出SVPWM
     pFOC->SvpwmGenerate(pFOC->iαSVPWM,pFOC->iβSVPWM);
 	return;
-}
-/*************************************************************
-** Function name:       FOCCycle
-** Descriptions:        FOC主循环
-** Input parameters:    None
-** Output parameters:   None
-** Returned value:      None
-** Remarks:             None
-*************************************************************/
-void FOCCycle(PFOC_Struct pFOC)
-{
-        if(FOC_TIMEOUT(pFOC->cycle*1000,pFOC->startTime)) {
-            pFOC->startTime = FOC_GETTIME();
-            FocContorl(pFOC);
-        }
 }
 /*************************************************************
 ** Function name:       SetCurrentPIDTar
@@ -264,7 +242,24 @@ void SetCurrentPIDParams(PFOC_Struct pFOC,float kp,float ki,float kd,float outMa
 void SetFocEnable(PFOC_Struct pFOC,uint8_t isEnable)
 {
     pFOC->isEnable = isEnable;
+	pFOC->SetEnable(pFOC->isEnable);
 }
-
-
-
+/*************************************************************
+** Function name:       FOCPrintf
+** Descriptions:        FOC打印信息
+** Input parameters:    None
+** Output parameters:   None
+** Returned value:      None
+** Remarks:             None
+*************************************************************/
+void FOCPrintf(PFOC_Struct pFOC)	
+{
+    printf("1:%f\r\n",pFOC->ia);
+    printf("2:%f\r\n",pFOC->ib);
+    printf("3:%f\r\n",pFOC->ic);
+	printf("5:%f\r\n",pFOC->id);
+    printf("6:%f\r\n",pFOC->iq);
+	//printf("7:%f\r\n",pFOC->tarid);
+	printf("7:%f\r\n",pFOC->idPID.out);
+	printf("8:%f\r\n",pFOC->iqPID.out);
+}

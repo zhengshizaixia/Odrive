@@ -60,6 +60,9 @@ void Error_Handler(void);
 /* Private defines -----------------------------------------------------------*/
 #define Motor_Enable_Pin GPIO_PIN_12
 #define Motor_Enable_GPIO_Port GPIOB
+#define Encoder_Z_Pin GPIO_PIN_9
+#define Encoder_Z_GPIO_Port GPIOC
+#define Encoder_Z_EXTI_IRQn EXTI9_5_IRQn
 /* USER CODE BEGIN Private defines */
 
 /* USER CODE END Private defines */

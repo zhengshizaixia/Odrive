@@ -28,6 +28,8 @@ odrive\anglecalibrationfunc.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal
 odrive\anglecalibrationfunc.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h
 odrive\anglecalibrationfunc.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h
 odrive\anglecalibrationfunc.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h
+odrive\anglecalibrationfunc.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc.h
+odrive\anglecalibrationfunc.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc_ex.h
 odrive\anglecalibrationfunc.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h
 odrive\anglecalibrationfunc.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h
 odrive\anglecalibrationfunc.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h
@@ -35,3 +37,4 @@ odrive\anglecalibrationfunc.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal
 odrive\anglecalibrationfunc.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h
 odrive\anglecalibrationfunc.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h
 odrive\anglecalibrationfunc.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h
+odrive\anglecalibrationfunc.o: ..\User\MCUDriver\GPIONVIC.h

@@ -24,6 +24,8 @@ odrive\tim1pwm.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_exti.h
 odrive\tim1pwm.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h
 odrive\tim1pwm.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h
 odrive\tim1pwm.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h
+odrive\tim1pwm.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc.h
+odrive\tim1pwm.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc_ex.h
 odrive\tim1pwm.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h
 odrive\tim1pwm.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h
 odrive\tim1pwm.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h
@@ -31,6 +33,4 @@ odrive\tim1pwm.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h
 odrive\tim1pwm.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h
 odrive\tim1pwm.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h
 odrive\tim1pwm.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h
-odrive\tim1pwm.o: ..\User\RTT\SEGGER_RTT_Conf.h
-odrive\tim1pwm.o: ..\User\RTT\SEGGER_RTT.h
-odrive\tim1pwm.o: D:\SoftWare\Keil\ARM\ARMCC\Bin\..\include\stdio.h
+odrive\tim1pwm.o: ..\User\MCUDriver\ADC1.h
