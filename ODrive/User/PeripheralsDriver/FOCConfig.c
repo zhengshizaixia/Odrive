@@ -79,7 +79,12 @@ static void GetMotorPreCurrent(float *ua,float *ub,float *uc)
 }
 
 //声明FOC对象
-FOC_EXPORT(gMotorFOC,0.0005f,7.0f,3,SetMotorAndTimITEnable,GetTimer3EncoderAngle,GetMotorSVPWMSector,GetMotorPreCurrent,MotorSvpwmGenerate)
+FOC_EXPORT(gMotorFOC,7.0f,3,
+			SetMotorAndTimITEnable,
+			GetTimer3EncoderAngle,
+			GetMotorSVPWMSector,
+			GetMotorPreCurrent,
+			MotorSvpwmGenerate)
 
 /*************************************************************
 ** Function name:       FOCConfig_Init

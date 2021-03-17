@@ -30,10 +30,8 @@ FOC结构体
 */
 struct SFOC_Struct
 {
-    float cycle;
-
-    uint8_t isEnable; //电机使能
-    uint8_t polePairs; //极对数
+    uint8_t isEnable;   //电机使能标志
+    uint8_t polePairs;  //极对数
 
     float tariq;        //目标电流
     float tarid;        //目标电流
@@ -66,17 +64,16 @@ typedef FOC_Struct *PFOC_Struct;
 /*************************************************************
 ** Function name:       FOC_EXPORT
 ** Descriptions:        声明一个FOC对象
-**                      xCycle：FOC控制周期 单位S 建议 0.01
 **                      xGetPreCurrent：获取相电流值，注意检测时间窗口
+**						xiNum：电流采集相数（主要用来区分是否为3相电流）
 **                      xSvpwmGenerate：SVPWM生成函数。配合SVPWM.h
 ** Input parameters:    None
 ** Output parameters:   None
 ** Returned value:      None
 ** Remarks:             None
 *************************************************************/
-#define FOC_EXPORT(x,xCycle,xpolePairs,xiNum,xSetEnable,xGetEncoderAngle,xGetSVPWMSector,xGetPreCurrent,xSvpwmGenerate)    \
+#define FOC_EXPORT(x,xpolePairs,xiNum,xSetEnable,xGetEncoderAngle,xGetSVPWMSector,xGetPreCurrent,xSvpwmGenerate)    \
 FOC_Struct x = {                            \
-    .cycle = xCycle,                        \
     .isEnable = 0,                          \
     .polePairs = xpolePairs,                \
     .tarid = 0.0,                           \
