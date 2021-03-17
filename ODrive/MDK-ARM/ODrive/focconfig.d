@@ -1,0 +1,11 @@
+odrive\focconfig.o: ..\User\PeripheralsDriver\FOCConfig.c
+odrive\focconfig.o: ..\User\PeripheralsDriver\FOCConfig.h
+odrive\focconfig.o: D:\SoftWare\Keil\ARM\ARMCC\Bin\..\include\stdint.h
+odrive\focconfig.o: ..\User\MCUDriver\MotorGPIO.h
+odrive\focconfig.o: ..\User\Framework\FOC.h
+odrive\focconfig.o: ..\User\PeripheralsDriver\SvpwmConfig.h
+odrive\focconfig.o: ..\User\MCUDriver\ADC1.h
+odrive\focconfig.o: ..\User\MCUDriver\TIM3Encoder.h
+odrive\focconfig.o: D:\SoftWare\Keil\ARM\ARMCC\Bin\..\include\stdio.h
+odrive\focconfig.o: ..\User\MCUDriver\Timer.h
+odrive\focconfig.o: D:\SoftWare\Keil\ARM\ARMCC\Bin\..\include\stdbool.h

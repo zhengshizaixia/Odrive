@@ -30,7 +30,7 @@ void PerDriverMain_Init(void)
 ** Created date:       none
 *************************************************************/
 int a = 0;
-float speed = 0.2;
+float speed = 0.4;
 void PerDriverMain_Loop(void)
 {
 	
@@ -39,13 +39,13 @@ void PerDriverMain_Loop(void)
 		FOCConfigPrintf();
 	)
 	
-	for (uint16_t i =0; i<400; i++) {
+	for (uint16_t i =0; i<200; i++) {
 		speed += 0.01;
 		SetTarIDIQ(0,speed);
 		HAL_Delay(50);
 	}
 	
-	for (uint16_t i =0; i<400; i++) {
+	for (uint16_t i =0; i<200; i++) {
 		speed -= 0.01;
 		SetTarIDIQ(0,speed);
 		HAL_Delay(50);
