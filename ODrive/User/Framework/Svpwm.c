@@ -167,13 +167,17 @@ void SvpwmGenerate(PSvpwm_Struct pSvpwm)
     if (td < tc) {
         td = tc;
     }
-//    printf("1:%f\r\n",ta);
-//    printf("2:%f\r\n",tb);
-//    printf("3:%f\r\n",tc);
+
+	if (td > pSvpwm->maxTs) {	
+		ta = ta * td / pSvpwm->maxTs;
+		tb = tb * td / pSvpwm->maxTs;
+		tc = tc * td / pSvpwm->maxTs;
+		td = pSvpwm->maxTs + pSvpwm->adcTs;
+	}
     pSvpwm->SetChannelAHighLeaveTime_us(ta);
     pSvpwm->SetChannelBHighLeaveTime_us(tb);
     pSvpwm->SetChannelCHighLeaveTime_us(tc);
-    pSvpwm->SetChannelDHighLeaveTime_us(td+1);
+    pSvpwm->SetChannelDHighLeaveTime_us(td);
 }
 /*************************************************************
 ** Function name:       SvpwmContorol

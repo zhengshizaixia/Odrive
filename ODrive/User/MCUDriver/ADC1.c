@@ -4,7 +4,10 @@
 
 extern ADC_HandleTypeDef hadc1;
 
+//一介低通滤波系数
 #define FILTER_KP 0.5f
+
+
 struct SADC1_Struct{
 	uint32_t adDmaValue[2];
 	int adValue[2];

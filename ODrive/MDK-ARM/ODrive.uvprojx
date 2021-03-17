@@ -772,16 +772,6 @@
               <FileType>5</FileType>
               <FilePath>..\User\Function\FunctionMain.h</FilePath>
             </File>
-            <File>
-              <FileName>AngleCalibrationFunc.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\User\Function\AngleCalibrationFunc.c</FilePath>
-            </File>
-            <File>
-              <FileName>AngleCalibrationFunc.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>..\User\Function\AngleCalibrationFunc.h</FilePath>
-            </File>
           </Files>
         </Group>
         <Group>

@@ -28,7 +28,6 @@
 "odrive\system_stm32f4xx.o"
 "odrive\appmain.o"
 "odrive\functionmain.o"
-"odrive\anglecalibrationfunc.o"
 "odrive\mcudrivermain.o"
 "odrive\tim1pwm.o"
 "odrive\tim3encoder.o"

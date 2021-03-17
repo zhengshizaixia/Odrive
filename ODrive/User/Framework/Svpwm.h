@@ -23,6 +23,8 @@ struct SSvpwm_Struct
     float t6;		//6矢量作用时长
     float t7;		//7矢量作用时长
     float ts;		//SVPWM周期
+	float maxTs;    //高电平最长时间
+	float adcTs;    //ADC稳定时间
     float udc;		//母线电压
     uint8_t sector;//扇区索引
     void (*SetChannelAHighLeaveTime_us)(float time); //一个SVPWM周期内A相绕组高电平时间(中央对齐方式)
@@ -38,7 +40,9 @@ typedef Svpwm_Struct *PSvpwm_Struct;
 ** Function name:       SVPWM_EXPORT
 ** Descriptions:        初始化一个SVPMW对象
 ** Input parameters:    x:对象名字
-**                      xTs：SVPWM波形周期 单位us 建议 50
+**                      xTs：SVPWM波形周期 单位us 建议 100
+**                      xMaxTs：高电平最长时间 建议80 留20us给AD采样
+**						xAdcTs：ADC稳定时间 建议1us
 **                      xudc：母线电压 单位V 
 **                      xSetChannelAHighLeaveTime_us：设置A相高电平时间
 **                      xSetChannelBHighLeaveTime_us：设置B相高电平时间
@@ -47,7 +51,7 @@ typedef Svpwm_Struct *PSvpwm_Struct;
 ** Returned value:      None
 ** Remarks:             None
 *************************************************************/
-#define SVPWM_EXPORT(x,xTs,xudc,xSetChannelAHighLeaveTime_us,xSetChannelBHighLeaveTime_us,xSetChannelCHighLeaveTime_us,xSetChannelDHighLeaveTime_us)     \
+#define SVPWM_EXPORT(x,xTs,xMaxTs,xAdcTs,xudc,xSetChannelAHighLeaveTime_us,xSetChannelBHighLeaveTime_us,xSetChannelCHighLeaveTime_us,xSetChannelDHighLeaveTime_us)     \
 Svpwm_Struct x = {                      \
     .uα = 0,                            \
     .uβ = 0,                            \
@@ -63,6 +67,8 @@ Svpwm_Struct x = {                      \
     .t6 = 0,                            \
     .t7 = 0,                            \
     .ts = xTs,                          \
+	.maxTs = xMaxTs,                    \
+	.adcTs = xAdcTs,                    \
     .udc = xudc,                        \
     .sector = 0,                        \
     .SetChannelAHighLeaveTime_us = xSetChannelAHighLeaveTime_us,            \
