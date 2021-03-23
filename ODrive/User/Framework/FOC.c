@@ -113,7 +113,7 @@ static void ParkAntiTransform(PFOC_Struct pFOC)
 static void CurrentPIControlID(PFOC_Struct pFOC)
 {
     //获取实际值
-    pFOC->idPID.pre = pFOC->id;
+    pFOC->idPID.pre = pFOC->id ;
     //获取目标值
     pFOC->idPID.tar = pFOC->tarid;
     //计算偏差

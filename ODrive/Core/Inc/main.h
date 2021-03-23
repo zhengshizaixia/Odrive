@@ -58,11 +58,15 @@ void Error_Handler(void);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
+#define DRV8301_CS_Pin GPIO_PIN_13
+#define DRV8301_CS_GPIO_Port GPIOC
 #define Motor_Enable_Pin GPIO_PIN_12
 #define Motor_Enable_GPIO_Port GPIOB
 #define Encoder_Z_Pin GPIO_PIN_9
 #define Encoder_Z_GPIO_Port GPIOC
 #define Encoder_Z_EXTI_IRQn EXTI9_5_IRQn
+#define nFault_Pin GPIO_PIN_2
+#define nFault_GPIO_Port GPIOD
 /* USER CODE BEGIN Private defines */
 
 /* USER CODE END Private defines */

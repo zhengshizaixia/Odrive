@@ -16,6 +16,7 @@
 #define M_KI  0.00005f
 #define M_KD  0.0f
 
+
 /*************************************************************
 ** Function name:       Motor1AngleCalibration
 ** Descriptions:        电机一角度校准
@@ -64,8 +65,8 @@ static void SetMotorAndTimITEnable(uint8_t isEnable)
 }
 
 /*************************************************************
-** Function name:       GetMotor1PreCurrent
-** Descriptions:        获取电机1 3相电流值
+** Function name:       GetMotorPreCurrent
+** Descriptions:        获取电机 3相实际电流
 ** Input parameters:    None
 ** Output parameters:   None
 ** Returned value:      None
@@ -75,7 +76,12 @@ static void GetMotorPreCurrent(float *ua,float *ub,float *uc)
 {
 	*ub = GetADC1ChannelXValue(0) - 0.0f;
 	*uc = GetADC1ChannelXValue(1) - 0.0f;
-	*ua = 0 - *ub - *uc;
+	*ua = 0.0f - *ub - *uc;
+	
+	*ua = *ua * 0.1611f * 1.5f;
+	*ub = *ub * 0.1611f * 1.5f;
+	*uc = *uc * 0.1611f * 1.5f;
+	
 }
 
 //声明FOC对象
@@ -102,6 +108,9 @@ void FOCConfig_Init(void)
 	SetCurrentPIDParams(&gMotorFOC,M_KP,M_KI,M_KD,M_OUTMAX);
 	//FOC使能
     SetFocEnable(&gMotorFOC,1);
+	
+	//设置目标
+	SetTarIDIQ(0,0);
 }
 /*************************************************************
 ** Function name:       MotorFocControl

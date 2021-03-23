@@ -174,6 +174,8 @@ void SvpwmGenerate(PSvpwm_Struct pSvpwm)
 		tc = tc * td / pSvpwm->maxTs;
 		td = pSvpwm->maxTs + pSvpwm->adcTs;
 	}
+//	ta = tb = tc = 0;
+//	td = 50;
     pSvpwm->SetChannelAHighLeaveTime_us(ta);
     pSvpwm->SetChannelBHighLeaveTime_us(tb);
     pSvpwm->SetChannelCHighLeaveTime_us(tc);

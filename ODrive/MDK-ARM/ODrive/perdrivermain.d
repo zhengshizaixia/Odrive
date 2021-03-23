@@ -31,9 +31,11 @@ odrive\perdrivermain.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_
 odrive\perdrivermain.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h
 odrive\perdrivermain.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h
 odrive\perdrivermain.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h
+odrive\perdrivermain.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h
 odrive\perdrivermain.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h
 odrive\perdrivermain.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h
 odrive\perdrivermain.o: ..\User\PeripheralsDriver\SvpwmConfig.h
 odrive\perdrivermain.o: ..\User\MCUDriver\Timer.h
 odrive\perdrivermain.o: D:\SoftWare\Keil\ARM\ARMCC\Bin\..\include\stdbool.h
 odrive\perdrivermain.o: ..\User\PeripheralsDriver\FOCConfig.h
+odrive\perdrivermain.o: ..\User\PeripheralsDriver\DRV8301Config.h

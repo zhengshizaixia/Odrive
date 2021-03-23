@@ -1,11 +1,11 @@
 Dependencies for Project 'ODrive', Target 'ODrive': (DO NOT MODIFY !)
 CompilerVersion: 5060960::V5.06 update 7 (build 960)::.\ARMCC
-F (startup_stm32f405xx.s)(0x6051E843)(--cpu Cortex-M4.fp.sp -g --apcs=interwork --pd "__MICROLIB SETA 1"-I.\RTE\_ODrive-ID:\SoftWare\Keil\ARM\CMSIS\5.7.0\CMSIS\Core\Include-ID:\SoftWare\Keil\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include--pd "__UVISION_VERSION SETA 533" --pd "_RTE_ SETA 1" --pd "STM32F405xx SETA 1" --pd "_RTE_ SETA 1"--list startup_stm32f405xx.lst --xref -o odrive\startup_stm32f405xx.o --depend odrive\startup_stm32f405xx.d)
+F (startup_stm32f405xx.s)(0x60596F1B)(--cpu Cortex-M4.fp.sp -g --apcs=interwork --pd "__MICROLIB SETA 1"-I.\RTE\_ODrive-ID:\SoftWare\Keil\ARM\CMSIS\5.7.0\CMSIS\Core\Include-ID:\SoftWare\Keil\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include--pd "__UVISION_VERSION SETA 533" --pd "_RTE_ SETA 1" --pd "STM32F405xx SETA 1" --pd "_RTE_ SETA 1"--list startup_stm32f405xx.lst --xref -o odrive\startup_stm32f405xx.o --depend odrive\startup_stm32f405xx.d)
 F (..\README.txt)(0x60516CCE)()
-F (../Core/Src/main.c)(0x6051E841)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\User\APP -I ..\User\Function -I ..\User\MCUDriver -I ..\User\PeripheralsDriver -I ..\User\Framework -I ..\User\RTT -I ..\Drivers\CMSIS\DSP\Include-I.\RTE\_ODrive-ID:\SoftWare\Keil\ARM\CMSIS\5.7.0\CMSIS\Core\Include-ID:\SoftWare\Keil\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="533" -D_RTE_ -DSTM32F405xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F405xx -D__FPU_PRESENT="1U" -DARM_MATH_CM4 -D__CC_ARM -D__TARGET_FPU_VFP-o odrive\main.o --omf_browse odrive\main.crf --depend odrive\main.d)
-I (../Core/Inc/main.h)(0x6051E841)
+F (../Core/Src/main.c)(0x60596F18)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\User\APP -I ..\User\Function -I ..\User\MCUDriver -I ..\User\PeripheralsDriver -I ..\User\Framework -I ..\User\RTT -I ..\Drivers\CMSIS\DSP\Include-I.\RTE\_ODrive-ID:\SoftWare\Keil\ARM\CMSIS\5.7.0\CMSIS\Core\Include-ID:\SoftWare\Keil\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="533" -D_RTE_ -DSTM32F405xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F405xx -D__FPU_PRESENT="1U" -DARM_MATH_CM4 -D__CC_ARM -D__TARGET_FPU_VFP-o odrive\main.o --omf_browse odrive\main.crf --depend odrive\main.d)
+I (../Core/Inc/main.h)(0x60596F18)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x604844F7)
-I (../Core/Inc/stm32f4xx_hal_conf.h)(0x6051E840)
+I (../Core/Inc/stm32f4xx_hal_conf.h)(0x60596F18)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x604844F7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x604844F7)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x604844CF)
@@ -33,18 +33,20 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h)(0x604844F7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x604844F7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x604844F7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x604844F7)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x604844F7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x604844F7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x604844F7)
-I (../Core/Inc/adc.h)(0x6051E840)
-I (../Core/Inc/dma.h)(0x6051E840)
-I (../Core/Inc/tim.h)(0x6051E840)
-I (../Core/Inc/gpio.h)(0x6051E83F)
+I (../Core/Inc/adc.h)(0x60596F17)
+I (../Core/Inc/dma.h)(0x60596F18)
+I (../Core/Inc/spi.h)(0x60596F18)
+I (../Core/Inc/tim.h)(0x60596F18)
+I (../Core/Inc/gpio.h)(0x60596F17)
 I (..\User\APP\APPMain.h)(0x60483F5E)
-F (../Core/Src/gpio.c)(0x6051E83F)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\User\APP -I ..\User\Function -I ..\User\MCUDriver -I ..\User\PeripheralsDriver -I ..\User\Framework -I ..\User\RTT -I ..\Drivers\CMSIS\DSP\Include-I.\RTE\_ODrive-ID:\SoftWare\Keil\ARM\CMSIS\5.7.0\CMSIS\Core\Include-ID:\SoftWare\Keil\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="533" -D_RTE_ -DSTM32F405xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F405xx -D__FPU_PRESENT="1U" -DARM_MATH_CM4 -D__CC_ARM -D__TARGET_FPU_VFP-o odrive\gpio.o --omf_browse odrive\gpio.crf --depend odrive\gpio.d)
-I (../Core/Inc/gpio.h)(0x6051E83F)
-I (../Core/Inc/main.h)(0x6051E841)
+F (../Core/Src/gpio.c)(0x60596F17)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\User\APP -I ..\User\Function -I ..\User\MCUDriver -I ..\User\PeripheralsDriver -I ..\User\Framework -I ..\User\RTT -I ..\Drivers\CMSIS\DSP\Include-I.\RTE\_ODrive-ID:\SoftWare\Keil\ARM\CMSIS\5.7.0\CMSIS\Core\Include-ID:\SoftWare\Keil\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="533" -D_RTE_ -DSTM32F405xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F405xx -D__FPU_PRESENT="1U" -DARM_MATH_CM4 -D__CC_ARM -D__TARGET_FPU_VFP-o odrive\gpio.o --omf_browse odrive\gpio.crf --depend odrive\gpio.d)
+I (../Core/Inc/gpio.h)(0x60596F17)
+I (../Core/Inc/main.h)(0x60596F18)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x604844F7)
-I (../Core/Inc/stm32f4xx_hal_conf.h)(0x6051E840)
+I (../Core/Inc/stm32f4xx_hal_conf.h)(0x60596F18)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x604844F7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x604844F7)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x604844CF)
@@ -72,13 +74,14 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h)(0x604844F7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x604844F7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x604844F7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x604844F7)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x604844F7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x604844F7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x604844F7)
-F (../Core/Src/adc.c)(0x6051E840)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\User\APP -I ..\User\Function -I ..\User\MCUDriver -I ..\User\PeripheralsDriver -I ..\User\Framework -I ..\User\RTT -I ..\Drivers\CMSIS\DSP\Include-I.\RTE\_ODrive-ID:\SoftWare\Keil\ARM\CMSIS\5.7.0\CMSIS\Core\Include-ID:\SoftWare\Keil\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="533" -D_RTE_ -DSTM32F405xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F405xx -D__FPU_PRESENT="1U" -DARM_MATH_CM4 -D__CC_ARM -D__TARGET_FPU_VFP-o odrive\adc.o --omf_browse odrive\adc.crf --depend odrive\adc.d)
-I (../Core/Inc/adc.h)(0x6051E840)
-I (../Core/Inc/main.h)(0x6051E841)
+F (../Core/Src/adc.c)(0x60596F17)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\User\APP -I ..\User\Function -I ..\User\MCUDriver -I ..\User\PeripheralsDriver -I ..\User\Framework -I ..\User\RTT -I ..\Drivers\CMSIS\DSP\Include-I.\RTE\_ODrive-ID:\SoftWare\Keil\ARM\CMSIS\5.7.0\CMSIS\Core\Include-ID:\SoftWare\Keil\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="533" -D_RTE_ -DSTM32F405xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F405xx -D__FPU_PRESENT="1U" -DARM_MATH_CM4 -D__CC_ARM -D__TARGET_FPU_VFP-o odrive\adc.o --omf_browse odrive\adc.crf --depend odrive\adc.d)
+I (../Core/Inc/adc.h)(0x60596F17)
+I (../Core/Inc/main.h)(0x60596F18)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x604844F7)
-I (../Core/Inc/stm32f4xx_hal_conf.h)(0x6051E840)
+I (../Core/Inc/stm32f4xx_hal_conf.h)(0x60596F18)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x604844F7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x604844F7)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x604844CF)
@@ -106,13 +109,14 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h)(0x604844F7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x604844F7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x604844F7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x604844F7)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x604844F7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x604844F7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x604844F7)
-F (../Core/Src/dma.c)(0x6051E840)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\User\APP -I ..\User\Function -I ..\User\MCUDriver -I ..\User\PeripheralsDriver -I ..\User\Framework -I ..\User\RTT -I ..\Drivers\CMSIS\DSP\Include-I.\RTE\_ODrive-ID:\SoftWare\Keil\ARM\CMSIS\5.7.0\CMSIS\Core\Include-ID:\SoftWare\Keil\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="533" -D_RTE_ -DSTM32F405xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F405xx -D__FPU_PRESENT="1U" -DARM_MATH_CM4 -D__CC_ARM -D__TARGET_FPU_VFP-o odrive\dma.o --omf_browse odrive\dma.crf --depend odrive\dma.d)
-I (../Core/Inc/dma.h)(0x6051E840)
-I (../Core/Inc/main.h)(0x6051E841)
+F (../Core/Src/dma.c)(0x60596F18)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\User\APP -I ..\User\Function -I ..\User\MCUDriver -I ..\User\PeripheralsDriver -I ..\User\Framework -I ..\User\RTT -I ..\Drivers\CMSIS\DSP\Include-I.\RTE\_ODrive-ID:\SoftWare\Keil\ARM\CMSIS\5.7.0\CMSIS\Core\Include-ID:\SoftWare\Keil\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="533" -D_RTE_ -DSTM32F405xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F405xx -D__FPU_PRESENT="1U" -DARM_MATH_CM4 -D__CC_ARM -D__TARGET_FPU_VFP-o odrive\dma.o --omf_browse odrive\dma.crf --depend odrive\dma.d)
+I (../Core/Inc/dma.h)(0x60596F18)
+I (../Core/Inc/main.h)(0x60596F18)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x604844F7)
-I (../Core/Inc/stm32f4xx_hal_conf.h)(0x6051E840)
+I (../Core/Inc/stm32f4xx_hal_conf.h)(0x60596F18)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x604844F7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x604844F7)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x604844CF)
@@ -140,13 +144,14 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h)(0x604844F7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x604844F7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x604844F7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x604844F7)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x604844F7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x604844F7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x604844F7)
-F (../Core/Src/tim.c)(0x6051E840)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\User\APP -I ..\User\Function -I ..\User\MCUDriver -I ..\User\PeripheralsDriver -I ..\User\Framework -I ..\User\RTT -I ..\Drivers\CMSIS\DSP\Include-I.\RTE\_ODrive-ID:\SoftWare\Keil\ARM\CMSIS\5.7.0\CMSIS\Core\Include-ID:\SoftWare\Keil\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="533" -D_RTE_ -DSTM32F405xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F405xx -D__FPU_PRESENT="1U" -DARM_MATH_CM4 -D__CC_ARM -D__TARGET_FPU_VFP-o odrive\tim.o --omf_browse odrive\tim.crf --depend odrive\tim.d)
-I (../Core/Inc/tim.h)(0x6051E840)
-I (../Core/Inc/main.h)(0x6051E841)
+F (../Core/Src/spi.c)(0x60596F18)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\User\APP -I ..\User\Function -I ..\User\MCUDriver -I ..\User\PeripheralsDriver -I ..\User\Framework -I ..\User\RTT -I ..\Drivers\CMSIS\DSP\Include-I.\RTE\_ODrive-ID:\SoftWare\Keil\ARM\CMSIS\5.7.0\CMSIS\Core\Include-ID:\SoftWare\Keil\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="533" -D_RTE_ -DSTM32F405xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F405xx -D__FPU_PRESENT="1U" -DARM_MATH_CM4 -D__CC_ARM -D__TARGET_FPU_VFP-o odrive\spi.o --omf_browse odrive\spi.crf --depend odrive\spi.d)
+I (../Core/Inc/spi.h)(0x60596F18)
+I (../Core/Inc/main.h)(0x60596F18)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x604844F7)
-I (../Core/Inc/stm32f4xx_hal_conf.h)(0x6051E840)
+I (../Core/Inc/stm32f4xx_hal_conf.h)(0x60596F18)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x604844F7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x604844F7)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x604844CF)
@@ -174,12 +179,14 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h)(0x604844F7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x604844F7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x604844F7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x604844F7)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x604844F7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x604844F7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x604844F7)
-F (../Core/Src/stm32f4xx_it.c)(0x6051E840)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\User\APP -I ..\User\Function -I ..\User\MCUDriver -I ..\User\PeripheralsDriver -I ..\User\Framework -I ..\User\RTT -I ..\Drivers\CMSIS\DSP\Include-I.\RTE\_ODrive-ID:\SoftWare\Keil\ARM\CMSIS\5.7.0\CMSIS\Core\Include-ID:\SoftWare\Keil\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="533" -D_RTE_ -DSTM32F405xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F405xx -D__FPU_PRESENT="1U" -DARM_MATH_CM4 -D__CC_ARM -D__TARGET_FPU_VFP-o odrive\stm32f4xx_it.o --omf_browse odrive\stm32f4xx_it.crf --depend odrive\stm32f4xx_it.d)
-I (../Core/Inc/main.h)(0x6051E841)
+F (../Core/Src/tim.c)(0x60596F18)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\User\APP -I ..\User\Function -I ..\User\MCUDriver -I ..\User\PeripheralsDriver -I ..\User\Framework -I ..\User\RTT -I ..\Drivers\CMSIS\DSP\Include-I.\RTE\_ODrive-ID:\SoftWare\Keil\ARM\CMSIS\5.7.0\CMSIS\Core\Include-ID:\SoftWare\Keil\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="533" -D_RTE_ -DSTM32F405xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F405xx -D__FPU_PRESENT="1U" -DARM_MATH_CM4 -D__CC_ARM -D__TARGET_FPU_VFP-o odrive\tim.o --omf_browse odrive\tim.crf --depend odrive\tim.d)
+I (../Core/Inc/tim.h)(0x60596F18)
+I (../Core/Inc/main.h)(0x60596F18)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x604844F7)
-I (../Core/Inc/stm32f4xx_hal_conf.h)(0x6051E840)
+I (../Core/Inc/stm32f4xx_hal_conf.h)(0x60596F18)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x604844F7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x604844F7)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x604844CF)
@@ -207,17 +214,52 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h)(0x604844F7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x604844F7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x604844F7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x604844F7)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x604844F7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x604844F7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x604844F7)
-I (../Core/Inc/stm32f4xx_it.h)(0x6051E840)
+F (../Core/Src/stm32f4xx_it.c)(0x60596F18)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\User\APP -I ..\User\Function -I ..\User\MCUDriver -I ..\User\PeripheralsDriver -I ..\User\Framework -I ..\User\RTT -I ..\Drivers\CMSIS\DSP\Include-I.\RTE\_ODrive-ID:\SoftWare\Keil\ARM\CMSIS\5.7.0\CMSIS\Core\Include-ID:\SoftWare\Keil\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="533" -D_RTE_ -DSTM32F405xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F405xx -D__FPU_PRESENT="1U" -DARM_MATH_CM4 -D__CC_ARM -D__TARGET_FPU_VFP-o odrive\stm32f4xx_it.o --omf_browse odrive\stm32f4xx_it.crf --depend odrive\stm32f4xx_it.d)
+I (../Core/Inc/main.h)(0x60596F18)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x604844F7)
+I (../Core/Inc/stm32f4xx_hal_conf.h)(0x60596F18)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x604844F7)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x604844F7)
+I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x604844CF)
+I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f405xx.h)(0x604844CF)
+I (../Drivers/CMSIS/Include/core_cm4.h)(0x604844D2)
+I (D:\SoftWare\Keil\ARM\ARMCC\include\stdint.h)(0x5E8E2EB2)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x604844D2)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x604844D2)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x604844D2)
+I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x604844D2)
+I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h)(0x604844CF)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x604844F7)
+I (D:\SoftWare\Keil\ARM\ARMCC\include\stddef.h)(0x5E8E2EB2)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h)(0x604844F7)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h)(0x604844F7)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio_ex.h)(0x604844F7)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_exti.h)(0x604844F7)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h)(0x604844F7)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h)(0x604844F7)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h)(0x604844F7)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc.h)(0x604844F7)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc_ex.h)(0x604844F7)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h)(0x604844F7)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h)(0x604844F7)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x604844F7)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x604844F7)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x604844F7)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x604844F7)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x604844F7)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x604844F7)
+I (../Core/Inc/stm32f4xx_it.h)(0x60596F18)
 I (..\User\MCUDriver\Timer.h)(0x60488320)
 I (D:\SoftWare\Keil\ARM\ARMCC\include\stdbool.h)(0x5E8E2EB2)
 I (..\User\MCUDriver\ADC1.h)(0x604C5E06)
 I (..\User\PeripheralsDriver\FOCConfig.h)(0x604CA118)
-F (../Core/Src/stm32f4xx_hal_msp.c)(0x6051E840)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\User\APP -I ..\User\Function -I ..\User\MCUDriver -I ..\User\PeripheralsDriver -I ..\User\Framework -I ..\User\RTT -I ..\Drivers\CMSIS\DSP\Include-I.\RTE\_ODrive-ID:\SoftWare\Keil\ARM\CMSIS\5.7.0\CMSIS\Core\Include-ID:\SoftWare\Keil\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="533" -D_RTE_ -DSTM32F405xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F405xx -D__FPU_PRESENT="1U" -DARM_MATH_CM4 -D__CC_ARM -D__TARGET_FPU_VFP-o odrive\stm32f4xx_hal_msp.o --omf_browse odrive\stm32f4xx_hal_msp.crf --depend odrive\stm32f4xx_hal_msp.d)
-I (../Core/Inc/main.h)(0x6051E841)
+F (../Core/Src/stm32f4xx_hal_msp.c)(0x60596F18)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\User\APP -I ..\User\Function -I ..\User\MCUDriver -I ..\User\PeripheralsDriver -I ..\User\Framework -I ..\User\RTT -I ..\Drivers\CMSIS\DSP\Include-I.\RTE\_ODrive-ID:\SoftWare\Keil\ARM\CMSIS\5.7.0\CMSIS\Core\Include-ID:\SoftWare\Keil\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="533" -D_RTE_ -DSTM32F405xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F405xx -D__FPU_PRESENT="1U" -DARM_MATH_CM4 -D__CC_ARM -D__TARGET_FPU_VFP-o odrive\stm32f4xx_hal_msp.o --omf_browse odrive\stm32f4xx_hal_msp.crf --depend odrive\stm32f4xx_hal_msp.d)
+I (../Core/Inc/main.h)(0x60596F18)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x604844F7)
-I (../Core/Inc/stm32f4xx_hal_conf.h)(0x6051E840)
+I (../Core/Inc/stm32f4xx_hal_conf.h)(0x60596F18)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x604844F7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x604844F7)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x604844CF)
@@ -245,11 +287,12 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h)(0x604844F7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x604844F7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x604844F7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x604844F7)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x604844F7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x604844F7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x604844F7)
 F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c)(0x604844F7)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\User\APP -I ..\User\Function -I ..\User\MCUDriver -I ..\User\PeripheralsDriver -I ..\User\Framework -I ..\User\RTT -I ..\Drivers\CMSIS\DSP\Include-I.\RTE\_ODrive-ID:\SoftWare\Keil\ARM\CMSIS\5.7.0\CMSIS\Core\Include-ID:\SoftWare\Keil\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="533" -D_RTE_ -DSTM32F405xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F405xx -D__FPU_PRESENT="1U" -DARM_MATH_CM4 -D__CC_ARM -D__TARGET_FPU_VFP-o odrive\stm32f4xx_hal_adc.o --omf_browse odrive\stm32f4xx_hal_adc.crf --depend odrive\stm32f4xx_hal_adc.d)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x604844F7)
-I (../Core/Inc/stm32f4xx_hal_conf.h)(0x6051E840)
+I (../Core/Inc/stm32f4xx_hal_conf.h)(0x60596F18)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x604844F7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x604844F7)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x604844CF)
@@ -277,11 +320,12 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h)(0x604844F7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x604844F7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x604844F7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x604844F7)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x604844F7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x604844F7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x604844F7)
 F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c)(0x604844F7)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\User\APP -I ..\User\Function -I ..\User\MCUDriver -I ..\User\PeripheralsDriver -I ..\User\Framework -I ..\User\RTT -I ..\Drivers\CMSIS\DSP\Include-I.\RTE\_ODrive-ID:\SoftWare\Keil\ARM\CMSIS\5.7.0\CMSIS\Core\Include-ID:\SoftWare\Keil\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="533" -D_RTE_ -DSTM32F405xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F405xx -D__FPU_PRESENT="1U" -DARM_MATH_CM4 -D__CC_ARM -D__TARGET_FPU_VFP-o odrive\stm32f4xx_hal_adc_ex.o --omf_browse odrive\stm32f4xx_hal_adc_ex.crf --depend odrive\stm32f4xx_hal_adc_ex.d)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x604844F7)
-I (../Core/Inc/stm32f4xx_hal_conf.h)(0x6051E840)
+I (../Core/Inc/stm32f4xx_hal_conf.h)(0x60596F18)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x604844F7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x604844F7)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x604844CF)
@@ -309,11 +353,12 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h)(0x604844F7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x604844F7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x604844F7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x604844F7)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x604844F7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x604844F7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x604844F7)
 F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c)(0x604844F7)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\User\APP -I ..\User\Function -I ..\User\MCUDriver -I ..\User\PeripheralsDriver -I ..\User\Framework -I ..\User\RTT -I ..\Drivers\CMSIS\DSP\Include-I.\RTE\_ODrive-ID:\SoftWare\Keil\ARM\CMSIS\5.7.0\CMSIS\Core\Include-ID:\SoftWare\Keil\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="533" -D_RTE_ -DSTM32F405xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F405xx -D__FPU_PRESENT="1U" -DARM_MATH_CM4 -D__CC_ARM -D__TARGET_FPU_VFP-o odrive\stm32f4xx_hal_rcc.o --omf_browse odrive\stm32f4xx_hal_rcc.crf --depend odrive\stm32f4xx_hal_rcc.d)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x604844F7)
-I (../Core/Inc/stm32f4xx_hal_conf.h)(0x6051E840)
+I (../Core/Inc/stm32f4xx_hal_conf.h)(0x60596F18)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x604844F7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x604844F7)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x604844CF)
@@ -341,11 +386,12 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h)(0x604844F7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x604844F7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x604844F7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x604844F7)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x604844F7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x604844F7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x604844F7)
 F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c)(0x604844F7)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\User\APP -I ..\User\Function -I ..\User\MCUDriver -I ..\User\PeripheralsDriver -I ..\User\Framework -I ..\User\RTT -I ..\Drivers\CMSIS\DSP\Include-I.\RTE\_ODrive-ID:\SoftWare\Keil\ARM\CMSIS\5.7.0\CMSIS\Core\Include-ID:\SoftWare\Keil\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="533" -D_RTE_ -DSTM32F405xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F405xx -D__FPU_PRESENT="1U" -DARM_MATH_CM4 -D__CC_ARM -D__TARGET_FPU_VFP-o odrive\stm32f4xx_hal_rcc_ex.o --omf_browse odrive\stm32f4xx_hal_rcc_ex.crf --depend odrive\stm32f4xx_hal_rcc_ex.d)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x604844F7)
-I (../Core/Inc/stm32f4xx_hal_conf.h)(0x6051E840)
+I (../Core/Inc/stm32f4xx_hal_conf.h)(0x60596F18)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x604844F7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x604844F7)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x604844CF)
@@ -373,11 +419,12 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h)(0x604844F7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x604844F7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x604844F7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x604844F7)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x604844F7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x604844F7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x604844F7)
 F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c)(0x604844F7)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\User\APP -I ..\User\Function -I ..\User\MCUDriver -I ..\User\PeripheralsDriver -I ..\User\Framework -I ..\User\RTT -I ..\Drivers\CMSIS\DSP\Include-I.\RTE\_ODrive-ID:\SoftWare\Keil\ARM\CMSIS\5.7.0\CMSIS\Core\Include-ID:\SoftWare\Keil\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="533" -D_RTE_ -DSTM32F405xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F405xx -D__FPU_PRESENT="1U" -DARM_MATH_CM4 -D__CC_ARM -D__TARGET_FPU_VFP-o odrive\stm32f4xx_hal_flash.o --omf_browse odrive\stm32f4xx_hal_flash.crf --depend odrive\stm32f4xx_hal_flash.d)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x604844F7)
-I (../Core/Inc/stm32f4xx_hal_conf.h)(0x6051E840)
+I (../Core/Inc/stm32f4xx_hal_conf.h)(0x60596F18)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x604844F7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x604844F7)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x604844CF)
@@ -405,11 +452,12 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h)(0x604844F7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x604844F7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x604844F7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x604844F7)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x604844F7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x604844F7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x604844F7)
 F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c)(0x604844F7)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\User\APP -I ..\User\Function -I ..\User\MCUDriver -I ..\User\PeripheralsDriver -I ..\User\Framework -I ..\User\RTT -I ..\Drivers\CMSIS\DSP\Include-I.\RTE\_ODrive-ID:\SoftWare\Keil\ARM\CMSIS\5.7.0\CMSIS\Core\Include-ID:\SoftWare\Keil\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="533" -D_RTE_ -DSTM32F405xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F405xx -D__FPU_PRESENT="1U" -DARM_MATH_CM4 -D__CC_ARM -D__TARGET_FPU_VFP-o odrive\stm32f4xx_hal_flash_ex.o --omf_browse odrive\stm32f4xx_hal_flash_ex.crf --depend odrive\stm32f4xx_hal_flash_ex.d)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x604844F7)
-I (../Core/Inc/stm32f4xx_hal_conf.h)(0x6051E840)
+I (../Core/Inc/stm32f4xx_hal_conf.h)(0x60596F18)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x604844F7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x604844F7)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x604844CF)
@@ -437,11 +485,12 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h)(0x604844F7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x604844F7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x604844F7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x604844F7)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x604844F7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x604844F7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x604844F7)
 F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c)(0x604844F7)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\User\APP -I ..\User\Function -I ..\User\MCUDriver -I ..\User\PeripheralsDriver -I ..\User\Framework -I ..\User\RTT -I ..\Drivers\CMSIS\DSP\Include-I.\RTE\_ODrive-ID:\SoftWare\Keil\ARM\CMSIS\5.7.0\CMSIS\Core\Include-ID:\SoftWare\Keil\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="533" -D_RTE_ -DSTM32F405xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F405xx -D__FPU_PRESENT="1U" -DARM_MATH_CM4 -D__CC_ARM -D__TARGET_FPU_VFP-o odrive\stm32f4xx_hal_flash_ramfunc.o --omf_browse odrive\stm32f4xx_hal_flash_ramfunc.crf --depend odrive\stm32f4xx_hal_flash_ramfunc.d)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x604844F7)
-I (../Core/Inc/stm32f4xx_hal_conf.h)(0x6051E840)
+I (../Core/Inc/stm32f4xx_hal_conf.h)(0x60596F18)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x604844F7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x604844F7)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x604844CF)
@@ -469,11 +518,12 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h)(0x604844F7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x604844F7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x604844F7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x604844F7)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x604844F7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x604844F7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x604844F7)
 F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c)(0x604844F7)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\User\APP -I ..\User\Function -I ..\User\MCUDriver -I ..\User\PeripheralsDriver -I ..\User\Framework -I ..\User\RTT -I ..\Drivers\CMSIS\DSP\Include-I.\RTE\_ODrive-ID:\SoftWare\Keil\ARM\CMSIS\5.7.0\CMSIS\Core\Include-ID:\SoftWare\Keil\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="533" -D_RTE_ -DSTM32F405xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F405xx -D__FPU_PRESENT="1U" -DARM_MATH_CM4 -D__CC_ARM -D__TARGET_FPU_VFP-o odrive\stm32f4xx_hal_gpio.o --omf_browse odrive\stm32f4xx_hal_gpio.crf --depend odrive\stm32f4xx_hal_gpio.d)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x604844F7)
-I (../Core/Inc/stm32f4xx_hal_conf.h)(0x6051E840)
+I (../Core/Inc/stm32f4xx_hal_conf.h)(0x60596F18)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x604844F7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x604844F7)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x604844CF)
@@ -501,11 +551,12 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h)(0x604844F7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x604844F7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x604844F7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x604844F7)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x604844F7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x604844F7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x604844F7)
 F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c)(0x604844F7)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\User\APP -I ..\User\Function -I ..\User\MCUDriver -I ..\User\PeripheralsDriver -I ..\User\Framework -I ..\User\RTT -I ..\Drivers\CMSIS\DSP\Include-I.\RTE\_ODrive-ID:\SoftWare\Keil\ARM\CMSIS\5.7.0\CMSIS\Core\Include-ID:\SoftWare\Keil\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="533" -D_RTE_ -DSTM32F405xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F405xx -D__FPU_PRESENT="1U" -DARM_MATH_CM4 -D__CC_ARM -D__TARGET_FPU_VFP-o odrive\stm32f4xx_hal_dma_ex.o --omf_browse odrive\stm32f4xx_hal_dma_ex.crf --depend odrive\stm32f4xx_hal_dma_ex.d)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x604844F7)
-I (../Core/Inc/stm32f4xx_hal_conf.h)(0x6051E840)
+I (../Core/Inc/stm32f4xx_hal_conf.h)(0x60596F18)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x604844F7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x604844F7)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x604844CF)
@@ -533,11 +584,12 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h)(0x604844F7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x604844F7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x604844F7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x604844F7)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x604844F7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x604844F7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x604844F7)
 F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c)(0x604844F7)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\User\APP -I ..\User\Function -I ..\User\MCUDriver -I ..\User\PeripheralsDriver -I ..\User\Framework -I ..\User\RTT -I ..\Drivers\CMSIS\DSP\Include-I.\RTE\_ODrive-ID:\SoftWare\Keil\ARM\CMSIS\5.7.0\CMSIS\Core\Include-ID:\SoftWare\Keil\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="533" -D_RTE_ -DSTM32F405xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F405xx -D__FPU_PRESENT="1U" -DARM_MATH_CM4 -D__CC_ARM -D__TARGET_FPU_VFP-o odrive\stm32f4xx_hal_dma.o --omf_browse odrive\stm32f4xx_hal_dma.crf --depend odrive\stm32f4xx_hal_dma.d)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x604844F7)
-I (../Core/Inc/stm32f4xx_hal_conf.h)(0x6051E840)
+I (../Core/Inc/stm32f4xx_hal_conf.h)(0x60596F18)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x604844F7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x604844F7)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x604844CF)
@@ -565,11 +617,12 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h)(0x604844F7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x604844F7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x604844F7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x604844F7)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x604844F7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x604844F7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x604844F7)
 F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c)(0x604844F7)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\User\APP -I ..\User\Function -I ..\User\MCUDriver -I ..\User\PeripheralsDriver -I ..\User\Framework -I ..\User\RTT -I ..\Drivers\CMSIS\DSP\Include-I.\RTE\_ODrive-ID:\SoftWare\Keil\ARM\CMSIS\5.7.0\CMSIS\Core\Include-ID:\SoftWare\Keil\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="533" -D_RTE_ -DSTM32F405xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F405xx -D__FPU_PRESENT="1U" -DARM_MATH_CM4 -D__CC_ARM -D__TARGET_FPU_VFP-o odrive\stm32f4xx_hal_pwr.o --omf_browse odrive\stm32f4xx_hal_pwr.crf --depend odrive\stm32f4xx_hal_pwr.d)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x604844F7)
-I (../Core/Inc/stm32f4xx_hal_conf.h)(0x6051E840)
+I (../Core/Inc/stm32f4xx_hal_conf.h)(0x60596F18)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x604844F7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x604844F7)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x604844CF)
@@ -597,11 +650,12 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h)(0x604844F7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x604844F7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x604844F7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x604844F7)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x604844F7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x604844F7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x604844F7)
 F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c)(0x604844F7)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\User\APP -I ..\User\Function -I ..\User\MCUDriver -I ..\User\PeripheralsDriver -I ..\User\Framework -I ..\User\RTT -I ..\Drivers\CMSIS\DSP\Include-I.\RTE\_ODrive-ID:\SoftWare\Keil\ARM\CMSIS\5.7.0\CMSIS\Core\Include-ID:\SoftWare\Keil\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="533" -D_RTE_ -DSTM32F405xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F405xx -D__FPU_PRESENT="1U" -DARM_MATH_CM4 -D__CC_ARM -D__TARGET_FPU_VFP-o odrive\stm32f4xx_hal_pwr_ex.o --omf_browse odrive\stm32f4xx_hal_pwr_ex.crf --depend odrive\stm32f4xx_hal_pwr_ex.d)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x604844F7)
-I (../Core/Inc/stm32f4xx_hal_conf.h)(0x6051E840)
+I (../Core/Inc/stm32f4xx_hal_conf.h)(0x60596F18)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x604844F7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x604844F7)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x604844CF)
@@ -629,11 +683,12 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h)(0x604844F7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x604844F7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x604844F7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x604844F7)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x604844F7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x604844F7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x604844F7)
 F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c)(0x604844F7)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\User\APP -I ..\User\Function -I ..\User\MCUDriver -I ..\User\PeripheralsDriver -I ..\User\Framework -I ..\User\RTT -I ..\Drivers\CMSIS\DSP\Include-I.\RTE\_ODrive-ID:\SoftWare\Keil\ARM\CMSIS\5.7.0\CMSIS\Core\Include-ID:\SoftWare\Keil\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="533" -D_RTE_ -DSTM32F405xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F405xx -D__FPU_PRESENT="1U" -DARM_MATH_CM4 -D__CC_ARM -D__TARGET_FPU_VFP-o odrive\stm32f4xx_hal_cortex.o --omf_browse odrive\stm32f4xx_hal_cortex.crf --depend odrive\stm32f4xx_hal_cortex.d)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x604844F7)
-I (../Core/Inc/stm32f4xx_hal_conf.h)(0x6051E840)
+I (../Core/Inc/stm32f4xx_hal_conf.h)(0x60596F18)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x604844F7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x604844F7)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x604844CF)
@@ -661,11 +716,12 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h)(0x604844F7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x604844F7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x604844F7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x604844F7)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x604844F7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x604844F7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x604844F7)
 F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c)(0x604844F7)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\User\APP -I ..\User\Function -I ..\User\MCUDriver -I ..\User\PeripheralsDriver -I ..\User\Framework -I ..\User\RTT -I ..\Drivers\CMSIS\DSP\Include-I.\RTE\_ODrive-ID:\SoftWare\Keil\ARM\CMSIS\5.7.0\CMSIS\Core\Include-ID:\SoftWare\Keil\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="533" -D_RTE_ -DSTM32F405xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F405xx -D__FPU_PRESENT="1U" -DARM_MATH_CM4 -D__CC_ARM -D__TARGET_FPU_VFP-o odrive\stm32f4xx_hal.o --omf_browse odrive\stm32f4xx_hal.crf --depend odrive\stm32f4xx_hal.d)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x604844F7)
-I (../Core/Inc/stm32f4xx_hal_conf.h)(0x6051E840)
+I (../Core/Inc/stm32f4xx_hal_conf.h)(0x60596F18)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x604844F7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x604844F7)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x604844CF)
@@ -693,11 +749,12 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h)(0x604844F7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x604844F7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x604844F7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x604844F7)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x604844F7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x604844F7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x604844F7)
 F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c)(0x604844F7)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\User\APP -I ..\User\Function -I ..\User\MCUDriver -I ..\User\PeripheralsDriver -I ..\User\Framework -I ..\User\RTT -I ..\Drivers\CMSIS\DSP\Include-I.\RTE\_ODrive-ID:\SoftWare\Keil\ARM\CMSIS\5.7.0\CMSIS\Core\Include-ID:\SoftWare\Keil\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="533" -D_RTE_ -DSTM32F405xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F405xx -D__FPU_PRESENT="1U" -DARM_MATH_CM4 -D__CC_ARM -D__TARGET_FPU_VFP-o odrive\stm32f4xx_hal_exti.o --omf_browse odrive\stm32f4xx_hal_exti.crf --depend odrive\stm32f4xx_hal_exti.d)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x604844F7)
-I (../Core/Inc/stm32f4xx_hal_conf.h)(0x6051E840)
+I (../Core/Inc/stm32f4xx_hal_conf.h)(0x60596F18)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x604844F7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x604844F7)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x604844CF)
@@ -725,11 +782,45 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h)(0x604844F7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x604844F7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x604844F7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x604844F7)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x604844F7)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x604844F7)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x604844F7)
+F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c)(0x604844F7)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\User\APP -I ..\User\Function -I ..\User\MCUDriver -I ..\User\PeripheralsDriver -I ..\User\Framework -I ..\User\RTT -I ..\Drivers\CMSIS\DSP\Include-I.\RTE\_ODrive-ID:\SoftWare\Keil\ARM\CMSIS\5.7.0\CMSIS\Core\Include-ID:\SoftWare\Keil\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="533" -D_RTE_ -DSTM32F405xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F405xx -D__FPU_PRESENT="1U" -DARM_MATH_CM4 -D__CC_ARM -D__TARGET_FPU_VFP-o odrive\stm32f4xx_hal_spi.o --omf_browse odrive\stm32f4xx_hal_spi.crf --depend odrive\stm32f4xx_hal_spi.d)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x604844F7)
+I (../Core/Inc/stm32f4xx_hal_conf.h)(0x60596F18)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x604844F7)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x604844F7)
+I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x604844CF)
+I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f405xx.h)(0x604844CF)
+I (../Drivers/CMSIS/Include/core_cm4.h)(0x604844D2)
+I (D:\SoftWare\Keil\ARM\ARMCC\include\stdint.h)(0x5E8E2EB2)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x604844D2)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x604844D2)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x604844D2)
+I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x604844D2)
+I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h)(0x604844CF)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x604844F7)
+I (D:\SoftWare\Keil\ARM\ARMCC\include\stddef.h)(0x5E8E2EB2)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h)(0x604844F7)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h)(0x604844F7)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio_ex.h)(0x604844F7)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_exti.h)(0x604844F7)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h)(0x604844F7)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h)(0x604844F7)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h)(0x604844F7)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc.h)(0x604844F7)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc_ex.h)(0x604844F7)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h)(0x604844F7)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h)(0x604844F7)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x604844F7)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x604844F7)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x604844F7)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x604844F7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x604844F7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x604844F7)
 F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c)(0x604844F7)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\User\APP -I ..\User\Function -I ..\User\MCUDriver -I ..\User\PeripheralsDriver -I ..\User\Framework -I ..\User\RTT -I ..\Drivers\CMSIS\DSP\Include-I.\RTE\_ODrive-ID:\SoftWare\Keil\ARM\CMSIS\5.7.0\CMSIS\Core\Include-ID:\SoftWare\Keil\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="533" -D_RTE_ -DSTM32F405xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F405xx -D__FPU_PRESENT="1U" -DARM_MATH_CM4 -D__CC_ARM -D__TARGET_FPU_VFP-o odrive\stm32f4xx_hal_tim.o --omf_browse odrive\stm32f4xx_hal_tim.crf --depend odrive\stm32f4xx_hal_tim.d)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x604844F7)
-I (../Core/Inc/stm32f4xx_hal_conf.h)(0x6051E840)
+I (../Core/Inc/stm32f4xx_hal_conf.h)(0x60596F18)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x604844F7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x604844F7)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x604844CF)
@@ -757,11 +848,12 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h)(0x604844F7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x604844F7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x604844F7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x604844F7)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x604844F7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x604844F7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x604844F7)
 F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c)(0x604844F7)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\User\APP -I ..\User\Function -I ..\User\MCUDriver -I ..\User\PeripheralsDriver -I ..\User\Framework -I ..\User\RTT -I ..\Drivers\CMSIS\DSP\Include-I.\RTE\_ODrive-ID:\SoftWare\Keil\ARM\CMSIS\5.7.0\CMSIS\Core\Include-ID:\SoftWare\Keil\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="533" -D_RTE_ -DSTM32F405xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F405xx -D__FPU_PRESENT="1U" -DARM_MATH_CM4 -D__CC_ARM -D__TARGET_FPU_VFP-o odrive\stm32f4xx_hal_tim_ex.o --omf_browse odrive\stm32f4xx_hal_tim_ex.crf --depend odrive\stm32f4xx_hal_tim_ex.d)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x604844F7)
-I (../Core/Inc/stm32f4xx_hal_conf.h)(0x6051E840)
+I (../Core/Inc/stm32f4xx_hal_conf.h)(0x60596F18)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x604844F7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x604844F7)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x604844CF)
@@ -789,6 +881,7 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h)(0x604844F7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x604844F7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x604844F7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x604844F7)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x604844F7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x604844F7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x604844F7)
 F (..\Drivers\CMSIS\Lib\ARM\arm_cortexM4lf_math.lib)(0x604844D2)()
@@ -803,7 +896,7 @@ I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x604844D2)
 I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x604844D2)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h)(0x604844CF)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x604844F7)
-I (../Core/Inc/stm32f4xx_hal_conf.h)(0x6051E840)
+I (../Core/Inc/stm32f4xx_hal_conf.h)(0x60596F18)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x604844F7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x604844F7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x604844F7)
@@ -822,6 +915,7 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h)(0x604844F7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x604844F7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x604844F7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x604844F7)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x604844F7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x604844F7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x604844F7)
 F (..\User\APP\APPMain.c)(0x60483F5E)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\User\APP -I ..\User\Function -I ..\User\MCUDriver -I ..\User\PeripheralsDriver -I ..\User\Framework -I ..\User\RTT -I ..\Drivers\CMSIS\DSP\Include-I.\RTE\_ODrive-ID:\SoftWare\Keil\ARM\CMSIS\5.7.0\CMSIS\Core\Include-ID:\SoftWare\Keil\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="533" -D_RTE_ -DSTM32F405xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F405xx -D__FPU_PRESENT="1U" -DARM_MATH_CM4 -D__CC_ARM -D__TARGET_FPU_VFP-o odrive\appmain.o --omf_browse odrive\appmain.crf --depend odrive\appmain.d)
@@ -838,9 +932,9 @@ F (..\User\Function\FunctionMain.h)(0x60483F5E)()
 F (..\User\MCUDriver\MCUDriverMain.c)(0x604B085E)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\User\APP -I ..\User\Function -I ..\User\MCUDriver -I ..\User\PeripheralsDriver -I ..\User\Framework -I ..\User\RTT -I ..\Drivers\CMSIS\DSP\Include-I.\RTE\_ODrive-ID:\SoftWare\Keil\ARM\CMSIS\5.7.0\CMSIS\Core\Include-ID:\SoftWare\Keil\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="533" -D_RTE_ -DSTM32F405xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F405xx -D__FPU_PRESENT="1U" -DARM_MATH_CM4 -D__CC_ARM -D__TARGET_FPU_VFP-o odrive\mcudrivermain.o --omf_browse odrive\mcudrivermain.crf --depend odrive\mcudrivermain.d)
 I (..\User\MCUDriver\MCUDriverMain.h)(0x60483F5E)
 I (D:\SoftWare\Keil\ARM\ARMCC\include\stdint.h)(0x5E8E2EB2)
-I (../Core/Inc/main.h)(0x6051E841)
+I (../Core/Inc/main.h)(0x60596F18)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x604844F7)
-I (../Core/Inc/stm32f4xx_hal_conf.h)(0x6051E840)
+I (../Core/Inc/stm32f4xx_hal_conf.h)(0x60596F18)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x604844F7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x604844F7)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x604844CF)
@@ -867,6 +961,7 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h)(0x604844F7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x604844F7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x604844F7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x604844F7)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x604844F7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x604844F7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x604844F7)
 I (..\User\MCUDriver\TIM1PWM.h)(0x6051EECD)
@@ -880,9 +975,9 @@ F (..\User\MCUDriver\MCUDriverMain.h)(0x60483F5E)()
 F (..\User\MCUDriver\TIM1PWM.c)(0x6051EBE8)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\User\APP -I ..\User\Function -I ..\User\MCUDriver -I ..\User\PeripheralsDriver -I ..\User\Framework -I ..\User\RTT -I ..\Drivers\CMSIS\DSP\Include-I.\RTE\_ODrive-ID:\SoftWare\Keil\ARM\CMSIS\5.7.0\CMSIS\Core\Include-ID:\SoftWare\Keil\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="533" -D_RTE_ -DSTM32F405xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F405xx -D__FPU_PRESENT="1U" -DARM_MATH_CM4 -D__CC_ARM -D__TARGET_FPU_VFP-o odrive\tim1pwm.o --omf_browse odrive\tim1pwm.crf --depend odrive\tim1pwm.d)
 I (..\User\MCUDriver\TIM1PWM.h)(0x6051EECD)
 I (D:\SoftWare\Keil\ARM\ARMCC\include\stdint.h)(0x5E8E2EB2)
-I (../Core/Inc/main.h)(0x6051E841)
+I (../Core/Inc/main.h)(0x60596F18)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x604844F7)
-I (../Core/Inc/stm32f4xx_hal_conf.h)(0x6051E840)
+I (../Core/Inc/stm32f4xx_hal_conf.h)(0x60596F18)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x604844F7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x604844F7)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x604844CF)
@@ -909,6 +1004,7 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h)(0x604844F7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x604844F7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x604844F7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x604844F7)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x604844F7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x604844F7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x604844F7)
 I (..\User\MCUDriver\ADC1.h)(0x604C5E06)
@@ -919,9 +1015,9 @@ I (D:\SoftWare\Keil\ARM\ARMCC\include\stdint.h)(0x5E8E2EB2)
 I (D:\SoftWare\Keil\ARM\ARMCC\include\stdio.h)(0x5E8E2EB2)
 I (..\User\RTT\SEGGER_RTT_Conf.h)(0x60483F5E)
 I (..\User\RTT\SEGGER_RTT.h)(0x60483F5E)
-I (../Core/Inc/main.h)(0x6051E841)
+I (../Core/Inc/main.h)(0x60596F18)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x604844F7)
-I (../Core/Inc/stm32f4xx_hal_conf.h)(0x6051E840)
+I (../Core/Inc/stm32f4xx_hal_conf.h)(0x60596F18)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x604844F7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x604844F7)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x604844CF)
@@ -948,6 +1044,7 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h)(0x604844F7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x604844F7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x604844F7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x604844F7)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x604844F7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x604844F7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x604844F7)
 F (..\User\MCUDriver\TIM3Encoder.h)(0x604AEC53)()
@@ -955,9 +1052,9 @@ F (..\User\MCUDriver\Timer.c)(0x6010EAEC)(--c99 -c --cpu Cortex-M4.fp.sp -D__MIC
 I (..\User\MCUDriver\Timer.h)(0x60488320)
 I (D:\SoftWare\Keil\ARM\ARMCC\include\stdint.h)(0x5E8E2EB2)
 I (D:\SoftWare\Keil\ARM\ARMCC\include\stdbool.h)(0x5E8E2EB2)
-I (../Core/Inc/main.h)(0x6051E841)
+I (../Core/Inc/main.h)(0x60596F18)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x604844F7)
-I (../Core/Inc/stm32f4xx_hal_conf.h)(0x6051E840)
+I (../Core/Inc/stm32f4xx_hal_conf.h)(0x60596F18)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x604844F7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x604844F7)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x604844CF)
@@ -984,15 +1081,16 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h)(0x604844F7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x604844F7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x604844F7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x604844F7)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x604844F7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x604844F7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x604844F7)
 F (..\User\MCUDriver\Timer.h)(0x60488320)()
 F (..\User\MCUDriver\MotorGPIO.c)(0x60489A98)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\User\APP -I ..\User\Function -I ..\User\MCUDriver -I ..\User\PeripheralsDriver -I ..\User\Framework -I ..\User\RTT -I ..\Drivers\CMSIS\DSP\Include-I.\RTE\_ODrive-ID:\SoftWare\Keil\ARM\CMSIS\5.7.0\CMSIS\Core\Include-ID:\SoftWare\Keil\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="533" -D_RTE_ -DSTM32F405xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F405xx -D__FPU_PRESENT="1U" -DARM_MATH_CM4 -D__CC_ARM -D__TARGET_FPU_VFP-o odrive\motorgpio.o --omf_browse odrive\motorgpio.crf --depend odrive\motorgpio.d)
 I (..\User\MCUDriver\MotorGPIO.h)(0x60489A97)
 I (D:\SoftWare\Keil\ARM\ARMCC\include\stdint.h)(0x5E8E2EB2)
-I (../Core/Inc/main.h)(0x6051E841)
+I (../Core/Inc/main.h)(0x60596F18)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x604844F7)
-I (../Core/Inc/stm32f4xx_hal_conf.h)(0x6051E840)
+I (../Core/Inc/stm32f4xx_hal_conf.h)(0x60596F18)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x604844F7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x604844F7)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x604844CF)
@@ -1019,15 +1117,16 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h)(0x604844F7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x604844F7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x604844F7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x604844F7)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x604844F7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x604844F7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x604844F7)
 F (..\User\MCUDriver\MotorGPIO.h)(0x60489A97)()
 F (..\User\MCUDriver\GPIONVIC.c)(0x604B07E1)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\User\APP -I ..\User\Function -I ..\User\MCUDriver -I ..\User\PeripheralsDriver -I ..\User\Framework -I ..\User\RTT -I ..\Drivers\CMSIS\DSP\Include-I.\RTE\_ODrive-ID:\SoftWare\Keil\ARM\CMSIS\5.7.0\CMSIS\Core\Include-ID:\SoftWare\Keil\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="533" -D_RTE_ -DSTM32F405xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F405xx -D__FPU_PRESENT="1U" -DARM_MATH_CM4 -D__CC_ARM -D__TARGET_FPU_VFP-o odrive\gpionvic.o --omf_browse odrive\gpionvic.crf --depend odrive\gpionvic.d)
 I (..\User\MCUDriver\GPIONVIC.h)(0x604AEDC6)
 I (D:\SoftWare\Keil\ARM\ARMCC\include\stdint.h)(0x5E8E2EB2)
-I (../Core/Inc/main.h)(0x6051E841)
+I (../Core/Inc/main.h)(0x60596F18)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x604844F7)
-I (../Core/Inc/stm32f4xx_hal_conf.h)(0x6051E840)
+I (../Core/Inc/stm32f4xx_hal_conf.h)(0x60596F18)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x604844F7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x604844F7)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x604844CF)
@@ -1054,17 +1153,18 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h)(0x604844F7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x604844F7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x604844F7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x604844F7)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x604844F7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x604844F7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x604844F7)
 I (..\User\MCUDriver\TIM3Encoder.h)(0x604AEC53)
 I (D:\SoftWare\Keil\ARM\ARMCC\include\stdio.h)(0x5E8E2EB2)
 F (..\User\MCUDriver\GPIONVIC.h)(0x604AEDC6)()
-F (..\User\MCUDriver\ADC1.c)(0x6051F2D6)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\User\APP -I ..\User\Function -I ..\User\MCUDriver -I ..\User\PeripheralsDriver -I ..\User\Framework -I ..\User\RTT -I ..\Drivers\CMSIS\DSP\Include-I.\RTE\_ODrive-ID:\SoftWare\Keil\ARM\CMSIS\5.7.0\CMSIS\Core\Include-ID:\SoftWare\Keil\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="533" -D_RTE_ -DSTM32F405xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F405xx -D__FPU_PRESENT="1U" -DARM_MATH_CM4 -D__CC_ARM -D__TARGET_FPU_VFP-o odrive\adc1.o --omf_browse odrive\adc1.crf --depend odrive\adc1.d)
+F (..\User\MCUDriver\ADC1.c)(0x60586880)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\User\APP -I ..\User\Function -I ..\User\MCUDriver -I ..\User\PeripheralsDriver -I ..\User\Framework -I ..\User\RTT -I ..\Drivers\CMSIS\DSP\Include-I.\RTE\_ODrive-ID:\SoftWare\Keil\ARM\CMSIS\5.7.0\CMSIS\Core\Include-ID:\SoftWare\Keil\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="533" -D_RTE_ -DSTM32F405xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F405xx -D__FPU_PRESENT="1U" -DARM_MATH_CM4 -D__CC_ARM -D__TARGET_FPU_VFP-o odrive\adc1.o --omf_browse odrive\adc1.crf --depend odrive\adc1.d)
 I (..\User\MCUDriver\ADC1.h)(0x604C5E06)
 I (D:\SoftWare\Keil\ARM\ARMCC\include\stdint.h)(0x5E8E2EB2)
-I (../Core/Inc/main.h)(0x6051E841)
+I (../Core/Inc/main.h)(0x60596F18)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x604844F7)
-I (../Core/Inc/stm32f4xx_hal_conf.h)(0x6051E840)
+I (../Core/Inc/stm32f4xx_hal_conf.h)(0x60596F18)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x604844F7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x604844F7)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x604844CF)
@@ -1091,15 +1191,16 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h)(0x604844F7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x604844F7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x604844F7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x604844F7)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x604844F7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x604844F7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x604844F7)
 F (..\User\MCUDriver\ADC1.h)(0x604C5E06)()
-F (..\User\PeripheralsDriver\PerDriverMain.c)(0x6051EC76)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\User\APP -I ..\User\Function -I ..\User\MCUDriver -I ..\User\PeripheralsDriver -I ..\User\Framework -I ..\User\RTT -I ..\Drivers\CMSIS\DSP\Include-I.\RTE\_ODrive-ID:\SoftWare\Keil\ARM\CMSIS\5.7.0\CMSIS\Core\Include-ID:\SoftWare\Keil\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="533" -D_RTE_ -DSTM32F405xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F405xx -D__FPU_PRESENT="1U" -DARM_MATH_CM4 -D__CC_ARM -D__TARGET_FPU_VFP-o odrive\perdrivermain.o --omf_browse odrive\perdrivermain.crf --depend odrive\perdrivermain.d)
-I (..\User\PeripheralsDriver\PerDriverMain.h)(0x60483F5E)
+F (..\User\MCUDriver\SPI3.c)(0x60596891)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\User\APP -I ..\User\Function -I ..\User\MCUDriver -I ..\User\PeripheralsDriver -I ..\User\Framework -I ..\User\RTT -I ..\Drivers\CMSIS\DSP\Include-I.\RTE\_ODrive-ID:\SoftWare\Keil\ARM\CMSIS\5.7.0\CMSIS\Core\Include-ID:\SoftWare\Keil\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="533" -D_RTE_ -DSTM32F405xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F405xx -D__FPU_PRESENT="1U" -DARM_MATH_CM4 -D__CC_ARM -D__TARGET_FPU_VFP-o odrive\spi3.o --omf_browse odrive\spi3.crf --depend odrive\spi3.d)
+I (..\User\MCUDriver\SPI3.h)(0x60596897)
 I (D:\SoftWare\Keil\ARM\ARMCC\include\stdint.h)(0x5E8E2EB2)
-I (../Core/Inc/main.h)(0x6051E841)
+I (../Core/Inc/main.h)(0x60596F18)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x604844F7)
-I (../Core/Inc/stm32f4xx_hal_conf.h)(0x6051E840)
+I (../Core/Inc/stm32f4xx_hal_conf.h)(0x60596F18)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x604844F7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x604844F7)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x604844CF)
@@ -1126,12 +1227,50 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h)(0x604844F7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x604844F7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x604844F7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x604844F7)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x604844F7)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x604844F7)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x604844F7)
+F (..\User\MCUDriver\SPI3.h)(0x60596897)()
+F (..\User\PeripheralsDriver\PerDriverMain.c)(0x6059E90A)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\User\APP -I ..\User\Function -I ..\User\MCUDriver -I ..\User\PeripheralsDriver -I ..\User\Framework -I ..\User\RTT -I ..\Drivers\CMSIS\DSP\Include-I.\RTE\_ODrive-ID:\SoftWare\Keil\ARM\CMSIS\5.7.0\CMSIS\Core\Include-ID:\SoftWare\Keil\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="533" -D_RTE_ -DSTM32F405xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F405xx -D__FPU_PRESENT="1U" -DARM_MATH_CM4 -D__CC_ARM -D__TARGET_FPU_VFP-o odrive\perdrivermain.o --omf_browse odrive\perdrivermain.crf --depend odrive\perdrivermain.d)
+I (..\User\PeripheralsDriver\PerDriverMain.h)(0x60483F5E)
+I (D:\SoftWare\Keil\ARM\ARMCC\include\stdint.h)(0x5E8E2EB2)
+I (../Core/Inc/main.h)(0x60596F18)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x604844F7)
+I (../Core/Inc/stm32f4xx_hal_conf.h)(0x60596F18)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x604844F7)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x604844F7)
+I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x604844CF)
+I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f405xx.h)(0x604844CF)
+I (../Drivers/CMSIS/Include/core_cm4.h)(0x604844D2)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x604844D2)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x604844D2)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x604844D2)
+I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x604844D2)
+I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h)(0x604844CF)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x604844F7)
+I (D:\SoftWare\Keil\ARM\ARMCC\include\stddef.h)(0x5E8E2EB2)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h)(0x604844F7)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h)(0x604844F7)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio_ex.h)(0x604844F7)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_exti.h)(0x604844F7)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h)(0x604844F7)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h)(0x604844F7)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h)(0x604844F7)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc.h)(0x604844F7)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc_ex.h)(0x604844F7)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h)(0x604844F7)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h)(0x604844F7)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x604844F7)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x604844F7)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x604844F7)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x604844F7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x604844F7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x604844F7)
 I (..\User\PeripheralsDriver\SvpwmConfig.h)(0x60489CCD)
 I (..\User\MCUDriver\Timer.h)(0x60488320)
 I (D:\SoftWare\Keil\ARM\ARMCC\include\stdbool.h)(0x5E8E2EB2)
 I (..\User\PeripheralsDriver\FOCConfig.h)(0x604CA118)
+I (..\User\PeripheralsDriver\DRV8301Config.h)(0x60589FF7)
 F (..\User\PeripheralsDriver\PerDriverMain.h)(0x60483F5E)()
 F (..\User\PeripheralsDriver\SvpwmConfig.c)(0x6051F1E5)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\User\APP -I ..\User\Function -I ..\User\MCUDriver -I ..\User\PeripheralsDriver -I ..\User\Framework -I ..\User\RTT -I ..\Drivers\CMSIS\DSP\Include-I.\RTE\_ODrive-ID:\SoftWare\Keil\ARM\CMSIS\5.7.0\CMSIS\Core\Include-ID:\SoftWare\Keil\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="533" -D_RTE_ -DSTM32F405xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F405xx -D__FPU_PRESENT="1U" -DARM_MATH_CM4 -D__CC_ARM -D__TARGET_FPU_VFP-o odrive\svpwmconfig.o --omf_browse odrive\svpwmconfig.crf --depend odrive\svpwmconfig.d)
 I (..\User\PeripheralsDriver\SvpwmConfig.h)(0x60489CCD)
@@ -1139,10 +1278,10 @@ I (D:\SoftWare\Keil\ARM\ARMCC\include\stdint.h)(0x5E8E2EB2)
 I (..\User\Framework\Svpwm.h)(0x6051F1B0)
 I (..\User\MCUDriver\TIM1PWM.h)(0x6051EECD)
 F (..\User\PeripheralsDriver\SvpwmConfig.h)(0x60489CCD)()
-F (..\User\PeripheralsDriver\FOCConfig.c)(0x6051F534)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\User\APP -I ..\User\Function -I ..\User\MCUDriver -I ..\User\PeripheralsDriver -I ..\User\Framework -I ..\User\RTT -I ..\Drivers\CMSIS\DSP\Include-I.\RTE\_ODrive-ID:\SoftWare\Keil\ARM\CMSIS\5.7.0\CMSIS\Core\Include-ID:\SoftWare\Keil\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="533" -D_RTE_ -DSTM32F405xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F405xx -D__FPU_PRESENT="1U" -DARM_MATH_CM4 -D__CC_ARM -D__TARGET_FPU_VFP-o odrive\focconfig.o --omf_browse odrive\focconfig.crf --depend odrive\focconfig.d)
+F (..\User\PeripheralsDriver\FOCConfig.c)(0x6059E692)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\User\APP -I ..\User\Function -I ..\User\MCUDriver -I ..\User\PeripheralsDriver -I ..\User\Framework -I ..\User\RTT -I ..\Drivers\CMSIS\DSP\Include-I.\RTE\_ODrive-ID:\SoftWare\Keil\ARM\CMSIS\5.7.0\CMSIS\Core\Include-ID:\SoftWare\Keil\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="533" -D_RTE_ -DSTM32F405xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F405xx -D__FPU_PRESENT="1U" -DARM_MATH_CM4 -D__CC_ARM -D__TARGET_FPU_VFP-o odrive\focconfig.o --omf_browse odrive\focconfig.crf --depend odrive\focconfig.d)
 I (..\User\PeripheralsDriver\FOCConfig.h)(0x604CA118)
 I (D:\SoftWare\Keil\ARM\ARMCC\include\stdint.h)(0x5E8E2EB2)
-I (..\User\Framework\FOC.h)(0x6051F521)
+I (..\User\Framework\FOC.h)(0x60586C01)
 I (..\User\MCUDriver\MotorGPIO.h)(0x60489A97)
 I (..\User\MCUDriver\ADC1.h)(0x604C5E06)
 I (..\User\MCUDriver\TIM3Encoder.h)(0x604AEC53)
@@ -1152,9 +1291,9 @@ I (..\User\PeripheralsDriver\SvpwmConfig.h)(0x60489CCD)
 I (..\User\MCUDriver\GPIONVIC.h)(0x604AEDC6)
 I (..\User\MCUDriver\Timer.h)(0x60488320)
 I (D:\SoftWare\Keil\ARM\ARMCC\include\stdbool.h)(0x5E8E2EB2)
-I (../Core/Inc/main.h)(0x6051E841)
+I (../Core/Inc/main.h)(0x60596F18)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x604844F7)
-I (../Core/Inc/stm32f4xx_hal_conf.h)(0x6051E840)
+I (../Core/Inc/stm32f4xx_hal_conf.h)(0x60596F18)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x604844F7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x604844F7)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x604844CF)
@@ -1181,11 +1320,51 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h)(0x604844F7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x604844F7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x604844F7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x604844F7)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x604844F7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x604844F7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x604844F7)
 F (..\User\PeripheralsDriver\FOCConfig.h)(0x604CA118)()
-F (..\User\Framework\FOC.c)(0x6051F552)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\User\APP -I ..\User\Function -I ..\User\MCUDriver -I ..\User\PeripheralsDriver -I ..\User\Framework -I ..\User\RTT -I ..\Drivers\CMSIS\DSP\Include-I.\RTE\_ODrive-ID:\SoftWare\Keil\ARM\CMSIS\5.7.0\CMSIS\Core\Include-ID:\SoftWare\Keil\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="533" -D_RTE_ -DSTM32F405xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F405xx -D__FPU_PRESENT="1U" -DARM_MATH_CM4 -D__CC_ARM -D__TARGET_FPU_VFP-o odrive\foc.o --omf_browse odrive\foc.crf --depend odrive\foc.d)
-I (..\User\Framework\FOC.h)(0x6051F521)
+F (..\User\PeripheralsDriver\DRV8301Config.c)(0x60599174)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\User\APP -I ..\User\Function -I ..\User\MCUDriver -I ..\User\PeripheralsDriver -I ..\User\Framework -I ..\User\RTT -I ..\Drivers\CMSIS\DSP\Include-I.\RTE\_ODrive-ID:\SoftWare\Keil\ARM\CMSIS\5.7.0\CMSIS\Core\Include-ID:\SoftWare\Keil\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="533" -D_RTE_ -DSTM32F405xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F405xx -D__FPU_PRESENT="1U" -DARM_MATH_CM4 -D__CC_ARM -D__TARGET_FPU_VFP-o odrive\drv8301config.o --omf_browse odrive\drv8301config.crf --depend odrive\drv8301config.d)
+I (..\User\PeripheralsDriver\DRV8301Config.h)(0x60589FF7)
+I (D:\SoftWare\Keil\ARM\ARMCC\include\stdint.h)(0x5E8E2EB2)
+I (..\User\Framework\DRV8301.h)(0x60596905)
+I (..\User\MCUDriver\SPI3.h)(0x60596897)
+I (..\User\MCUDriver\MotorGPIO.h)(0x60489A97)
+I (../Core/Inc/main.h)(0x60596F18)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x604844F7)
+I (../Core/Inc/stm32f4xx_hal_conf.h)(0x60596F18)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x604844F7)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x604844F7)
+I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x604844CF)
+I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f405xx.h)(0x604844CF)
+I (../Drivers/CMSIS/Include/core_cm4.h)(0x604844D2)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x604844D2)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x604844D2)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x604844D2)
+I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x604844D2)
+I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h)(0x604844CF)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x604844F7)
+I (D:\SoftWare\Keil\ARM\ARMCC\include\stddef.h)(0x5E8E2EB2)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h)(0x604844F7)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h)(0x604844F7)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio_ex.h)(0x604844F7)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_exti.h)(0x604844F7)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h)(0x604844F7)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h)(0x604844F7)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h)(0x604844F7)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc.h)(0x604844F7)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc_ex.h)(0x604844F7)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h)(0x604844F7)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h)(0x604844F7)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x604844F7)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x604844F7)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x604844F7)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x604844F7)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x604844F7)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x604844F7)
+F (..\User\PeripheralsDriver\DRV8301Config.h)(0x60589FF7)()
+F (..\User\Framework\FOC.c)(0x6059E59C)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\User\APP -I ..\User\Function -I ..\User\MCUDriver -I ..\User\PeripheralsDriver -I ..\User\Framework -I ..\User\RTT -I ..\Drivers\CMSIS\DSP\Include-I.\RTE\_ODrive-ID:\SoftWare\Keil\ARM\CMSIS\5.7.0\CMSIS\Core\Include-ID:\SoftWare\Keil\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="533" -D_RTE_ -DSTM32F405xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F405xx -D__FPU_PRESENT="1U" -DARM_MATH_CM4 -D__CC_ARM -D__TARGET_FPU_VFP-o odrive\foc.o --omf_browse odrive\foc.crf --depend odrive\foc.d)
+I (..\User\Framework\FOC.h)(0x60586C01)
 I (D:\SoftWare\Keil\ARM\ARMCC\include\stdint.h)(0x5E8E2EB2)
 I (..\Drivers\CMSIS\DSP\Include\arm_math.h)(0x604844D1)
 I (../Drivers/CMSIS/Include/core_cm4.h)(0x604844D2)
@@ -1198,8 +1377,8 @@ I (D:\SoftWare\Keil\ARM\ARMCC\include\stdio.h)(0x5E8E2EB2)
 I (..\User\RTT\SEGGER_RTT.h)(0x60483F5E)
 I (..\User\RTT\SEGGER_RTT_Conf.h)(0x60483F5E)
 I (..\User\Framework\Svpwm.h)(0x6051F1B0)
-F (..\User\Framework\FOC.h)(0x6051F521)()
-F (..\User\Framework\Svpwm.c)(0x6051F17E)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\User\APP -I ..\User\Function -I ..\User\MCUDriver -I ..\User\PeripheralsDriver -I ..\User\Framework -I ..\User\RTT -I ..\Drivers\CMSIS\DSP\Include-I.\RTE\_ODrive-ID:\SoftWare\Keil\ARM\CMSIS\5.7.0\CMSIS\Core\Include-ID:\SoftWare\Keil\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="533" -D_RTE_ -DSTM32F405xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F405xx -D__FPU_PRESENT="1U" -DARM_MATH_CM4 -D__CC_ARM -D__TARGET_FPU_VFP-o odrive\svpwm.o --omf_browse odrive\svpwm.crf --depend odrive\svpwm.d)
+F (..\User\Framework\FOC.h)(0x60586C01)()
+F (..\User\Framework\Svpwm.c)(0x6059E59C)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\User\APP -I ..\User\Function -I ..\User\MCUDriver -I ..\User\PeripheralsDriver -I ..\User\Framework -I ..\User\RTT -I ..\Drivers\CMSIS\DSP\Include-I.\RTE\_ODrive-ID:\SoftWare\Keil\ARM\CMSIS\5.7.0\CMSIS\Core\Include-ID:\SoftWare\Keil\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="533" -D_RTE_ -DSTM32F405xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F405xx -D__FPU_PRESENT="1U" -DARM_MATH_CM4 -D__CC_ARM -D__TARGET_FPU_VFP-o odrive\svpwm.o --omf_browse odrive\svpwm.crf --depend odrive\svpwm.d)
 I (..\User\Framework\Svpwm.h)(0x6051F1B0)
 I (D:\SoftWare\Keil\ARM\ARMCC\include\stdint.h)(0x5E8E2EB2)
 I (D:\SoftWare\Keil\ARM\ARMCC\include\math.h)(0x5E8E2EB2)
@@ -1207,6 +1386,45 @@ I (..\User\RTT\SEGGER_RTT_Conf.h)(0x60483F5E)
 I (..\User\RTT\SEGGER_RTT.h)(0x60483F5E)
 I (D:\SoftWare\Keil\ARM\ARMCC\include\stdio.h)(0x5E8E2EB2)
 F (..\User\Framework\Svpwm.h)(0x6051F1B0)()
+F (..\User\Framework\DRV8301.c)(0x6059EBFF)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\User\APP -I ..\User\Function -I ..\User\MCUDriver -I ..\User\PeripheralsDriver -I ..\User\Framework -I ..\User\RTT -I ..\Drivers\CMSIS\DSP\Include-I.\RTE\_ODrive-ID:\SoftWare\Keil\ARM\CMSIS\5.7.0\CMSIS\Core\Include-ID:\SoftWare\Keil\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="533" -D_RTE_ -DSTM32F405xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F405xx -D__FPU_PRESENT="1U" -DARM_MATH_CM4 -D__CC_ARM -D__TARGET_FPU_VFP-o odrive\drv8301.o --omf_browse odrive\drv8301.crf --depend odrive\drv8301.d)
+I (..\User\Framework\DRV8301.h)(0x60596905)
+I (D:\SoftWare\Keil\ARM\ARMCC\include\stdint.h)(0x5E8E2EB2)
+I (../Core/Inc/main.h)(0x60596F18)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x604844F7)
+I (../Core/Inc/stm32f4xx_hal_conf.h)(0x60596F18)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x604844F7)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x604844F7)
+I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x604844CF)
+I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f405xx.h)(0x604844CF)
+I (../Drivers/CMSIS/Include/core_cm4.h)(0x604844D2)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x604844D2)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x604844D2)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x604844D2)
+I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x604844D2)
+I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h)(0x604844CF)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x604844F7)
+I (D:\SoftWare\Keil\ARM\ARMCC\include\stddef.h)(0x5E8E2EB2)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h)(0x604844F7)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h)(0x604844F7)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio_ex.h)(0x604844F7)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_exti.h)(0x604844F7)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h)(0x604844F7)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h)(0x604844F7)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h)(0x604844F7)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc.h)(0x604844F7)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc_ex.h)(0x604844F7)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h)(0x604844F7)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h)(0x604844F7)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x604844F7)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x604844F7)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x604844F7)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x604844F7)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x604844F7)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x604844F7)
+I (D:\SoftWare\Keil\ARM\ARMCC\include\stdio.h)(0x5E8E2EB2)
+I (..\User\RTT\SEGGER_RTT.h)(0x60483F5E)
+I (..\User\RTT\SEGGER_RTT_Conf.h)(0x60483F5E)
+F (..\User\Framework\DRV8301.h)(0x60596905)()
 F (..\User\RTT\SEGGER_RTT.c)(0x60483F5E)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\User\APP -I ..\User\Function -I ..\User\MCUDriver -I ..\User\PeripheralsDriver -I ..\User\Framework -I ..\User\RTT -I ..\Drivers\CMSIS\DSP\Include-I.\RTE\_ODrive-ID:\SoftWare\Keil\ARM\CMSIS\5.7.0\CMSIS\Core\Include-ID:\SoftWare\Keil\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="533" -D_RTE_ -DSTM32F405xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F405xx -D__FPU_PRESENT="1U" -DARM_MATH_CM4 -D__CC_ARM -D__TARGET_FPU_VFP-o odrive\segger_rtt.o --omf_browse odrive\segger_rtt.crf --depend odrive\segger_rtt.d)
 I (..\User\RTT\SEGGER_RTT_Conf.h)(0x60483F5E)
 I (..\User\RTT\SEGGER_RTT.h)(0x60483F5E)

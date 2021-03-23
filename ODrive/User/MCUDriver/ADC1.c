@@ -5,7 +5,7 @@
 extern ADC_HandleTypeDef hadc1;
 
 //一介低通滤波系数
-#define FILTER_KP 0.5f
+#define FILTER_KP 1.0f
 
 
 struct SADC1_Struct{
@@ -68,8 +68,10 @@ void ADCDMAStart(void)
 *************************************************************/
 void ADCDMAIRQHandler(void)
 {
-	gADC1.adValue[0] = ((int)gADC1.adDmaValue[0] - 2014)/10.0f;
-	gADC1.adValue[1] = ((int)gADC1.adDmaValue[1] - 1996)/10.0f;
+	gADC1.adValue[0] = (int)gADC1.adDmaValue[0] - 2014;
+	gADC1.adValue[1] = (int)gADC1.adDmaValue[1] - 1996;
+//	gADC1.adValue[0] = (int)gADC1.adDmaValue[0];
+//	gADC1.adValue[1] = (int)gADC1.adDmaValue[1];
 }
 
 
