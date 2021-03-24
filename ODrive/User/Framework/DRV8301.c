@@ -21,7 +21,6 @@ void DRV8301SetGain(PDRV8301_Struct gDRV8301)
 	printf("GAIN:%d\r\n",gDRV8301->WriteReadData(0x180C));
 	printf("GAIN:%d\r\n",gDRV8301->WriteReadData(0x1800));
 	gDRV8301->SetCSIsEnable(1);
-	
 }
 
 

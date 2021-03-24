@@ -145,7 +145,7 @@ void SetTarIDIQ(float id,float iq)
 ** Returned value:      None
 ** Remarks:             None
 *************************************************************/
-void FOCConfigPrintf(void)
+void FOCConfig_Printf(void)
 {
 	FOCPrintf(&gMotorFOC);
 }

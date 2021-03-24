@@ -26,6 +26,7 @@
 #include "Timer.h"
 #include "ADC1.h"
 #include "FOCConfig.h"
+#include "SpeedPID.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -187,6 +188,7 @@ void SysTick_Handler(void)
 {
   /* USER CODE BEGIN SysTick_IRQn 0 */
 	MS_TIMEBASE(1);
+	SPEEDPID_TIMEBASE(1);
   /* USER CODE END SysTick_IRQn 0 */
   HAL_IncTick();
   /* USER CODE BEGIN SysTick_IRQn 1 */

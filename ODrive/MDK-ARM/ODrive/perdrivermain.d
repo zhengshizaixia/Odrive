@@ -39,3 +39,4 @@ odrive\perdrivermain.o: ..\User\MCUDriver\Timer.h
 odrive\perdrivermain.o: D:\SoftWare\Keil\ARM\ARMCC\Bin\..\include\stdbool.h
 odrive\perdrivermain.o: ..\User\PeripheralsDriver\FOCConfig.h
 odrive\perdrivermain.o: ..\User\PeripheralsDriver\DRV8301Config.h
+odrive\perdrivermain.o: ..\User\PeripheralsDriver\SpeedPIDConfig.h

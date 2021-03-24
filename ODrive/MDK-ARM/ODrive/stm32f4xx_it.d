@@ -38,3 +38,4 @@ odrive\stm32f4xx_it.o: ..\User\MCUDriver\Timer.h
 odrive\stm32f4xx_it.o: D:\SoftWare\Keil\ARM\ARMCC\Bin\..\include\stdbool.h
 odrive\stm32f4xx_it.o: ..\User\MCUDriver\ADC1.h
 odrive\stm32f4xx_it.o: ..\User\PeripheralsDriver\FOCConfig.h
+odrive\stm32f4xx_it.o: ..\User\Framework\SpeedPID.h

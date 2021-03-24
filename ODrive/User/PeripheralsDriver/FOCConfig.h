@@ -7,6 +7,6 @@ void FOCConfig_Init(void);
 void FOCConfig_Loop(void);
 
 void MotorFocControl(void);
-void FOCConfigPrintf(void);
+void FOCConfig_Printf(void);
 void SetTarIDIQ(float id,float iq);
 #endif /* FocConfig_h */

@@ -87,7 +87,6 @@ void SetTimer3EncoderCnt(int32_t cnt)
 float GetTimer3EncoderAngle(void)
 {
     gSTTimerEncoder.angle = (float)GetTimer3EncoderCnt() / (float)ENCODERPLUSE * 360.0f;
-
     if (gSTTimerEncoder.angle < 0) {
         gSTTimerEncoder.angle = gSTTimerEncoder.angle + 360.0f;
     }

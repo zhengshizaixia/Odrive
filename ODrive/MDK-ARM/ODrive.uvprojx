@@ -1014,6 +1014,16 @@
               <FileType>5</FileType>
               <FilePath>..\User\PeripheralsDriver\DRV8301Config.h</FilePath>
             </File>
+            <File>
+              <FileName>SpeedPIDConfig.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\User\PeripheralsDriver\SpeedPIDConfig.c</FilePath>
+            </File>
+            <File>
+              <FileName>SpeedPIDConfig.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\User\PeripheralsDriver\SpeedPIDConfig.h</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -1048,6 +1058,16 @@
               <FileName>DRV8301.h</FileName>
               <FileType>5</FileType>
               <FilePath>..\User\Framework\DRV8301.h</FilePath>
+            </File>
+            <File>
+              <FileName>SpeedPID.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\User\Framework\SpeedPID.c</FilePath>
+            </File>
+            <File>
+              <FileName>SpeedPID.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\User\Framework\SpeedPID.h</FilePath>
             </File>
           </Files>
         </Group>
