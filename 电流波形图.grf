@@ -1,0 +1,46 @@
+;This file was created by Graph (http://www.padowan.dk)
+;Do not change this file from other programs.
+[Graph]
+Version = 4.5.0.552
+MinVersion = 2.5
+OS = Windows NT 6.2 
+
+[Axes]
+xMin = -3.07997248083332
+xMax = 7.35400308583336
+xTickUnit = 1.0471975511966
+xGridUnit = 1.0471975511966
+xAutoTick = 0
+xMultiplyOfPi = 1
+yMin = -5.28114193639914
+yMax = 3.14911083026754
+yTickUnit = 2
+yGridUnit = 2
+AxesColor = clBlue
+GridColor = 0x00FF9999
+ShowLegend = 1
+Radian = 1
+
+[Func1]
+FuncType = 0
+y = sin(x)
+Color = clRed
+
+[Func2]
+FuncType = 0
+y = sin(x+PI*2/3)
+Color = clLime
+
+[Func3]
+FuncType = 0
+y = sin(x-PI*2/3)
+Color = clBlack
+
+[Data]
+TextLabelCount = 0
+FuncCount = 3
+PointSeriesCount = 0
+ShadeCount = 0
+RelationCount = 0
+OleObjectCount = 0
+
