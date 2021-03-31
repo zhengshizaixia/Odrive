@@ -639,6 +639,10 @@ Section Cross References
     speedpid.o(i.SpeedPIDCycle) refers to speedpid.o(.data) for .data
     speedpid.o(i.SpeedPIDPrintf) refers to f2d.o(.text) for __aeabi_f2d
     speedpid.o(i.SpeedPIDPrintf) refers to printfa.o(i.__0printf) for __2printf
+    positionpid.o(i.PositionPIDCycle) refers to positionpid.o(i.PositionPIDControl) for PositionPIDControl
+    positionpid.o(i.PositionPIDCycle) refers to positionpid.o(.data) for .data
+    positionpid.o(i.PositionPIDPrintf) refers to f2d.o(.text) for __aeabi_f2d
+    positionpid.o(i.PositionPIDPrintf) refers to printfa.o(i.__0printf) for __2printf
     segger_rtt.o(i.SEGGER_RTT_ConfigDownBuffer) refers to segger_rtt.o(.data) for .data
     segger_rtt.o(i.SEGGER_RTT_ConfigUpBuffer) refers to segger_rtt.o(.data) for .data
     segger_rtt.o(i.SEGGER_RTT_GetKey) refers to segger_rtt.o(i.SEGGER_RTT_Read) for SEGGER_RTT_Read
@@ -1407,6 +1411,13 @@ Removing Unused input sections from the image.
     Removing drv8301.o(.revsh_text), (4 bytes).
     Removing drv8301.o(.rrx_text), (6 bytes).
     Removing drv8301.o(i.DRV8301SetGain), (72 bytes).
+    Removing positionpid.o(i.PositionPIDControl), (140 bytes).
+    Removing positionpid.o(i.PositionPIDCycle), (56 bytes).
+    Removing positionpid.o(i.PositionPIDPrintf), (64 bytes).
+    Removing positionpid.o(i.SetPositionPIDEnable), (12 bytes).
+    Removing positionpid.o(i.SetPositionPIDParams), (14 bytes).
+    Removing positionpid.o(i.SetPositionPIDTar), (6 bytes).
+    Removing positionpid.o(.data), (4 bytes).
     Removing segger_rtt.o(i.SEGGER_RTT_ConfigDownBuffer), (56 bytes).
     Removing segger_rtt.o(i.SEGGER_RTT_ConfigUpBuffer), (56 bytes).
     Removing segger_rtt.o(i.SEGGER_RTT_GetKey), (28 bytes).
@@ -1490,7 +1501,7 @@ Removing Unused input sections from the image.
     Removing arm_common_tables.o(.constdata), (1026 bytes).
     Removing dneg.o(.text), (6 bytes).
 
-552 unused section(s) (total 244484 bytes) removed from the image.
+559 unused section(s) (total 244780 bytes) removed from the image.
 
 ==============================================================================
 
@@ -1530,35 +1541,35 @@ Image Symbol Table
     ../clib/../cmprslib/zerorunl2.c          0x00000000   Number         0  __dczerorl2.o ABSOLUTE
     ../clib/microlib/division.c              0x00000000   Number         0  uidiv.o ABSOLUTE
     ../clib/microlib/division.c              0x00000000   Number         0  uldiv.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry10a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry10b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry11a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry11b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry12a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry12b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry7a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry2.o ABSOLUTE
     ../clib/microlib/init/entry.s            0x00000000   Number         0  entry5.o ABSOLUTE
     ../clib/microlib/init/entry.s            0x00000000   Number         0  entry7b.o ABSOLUTE
     ../clib/microlib/init/entry.s            0x00000000   Number         0  entry8a.o ABSOLUTE
     ../clib/microlib/init/entry.s            0x00000000   Number         0  entry8b.o ABSOLUTE
     ../clib/microlib/init/entry.s            0x00000000   Number         0  entry9a.o ABSOLUTE
     ../clib/microlib/init/entry.s            0x00000000   Number         0  entry9b.o ABSOLUTE
-    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry10a.o ABSOLUTE
-    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry12a.o ABSOLUTE
-    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry12b.o ABSOLUTE
-    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry11a.o ABSOLUTE
-    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry11b.o ABSOLUTE
-    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry10b.o ABSOLUTE
-    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry.o ABSOLUTE
-    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry2.o ABSOLUTE
-    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry7a.o ABSOLUTE
-    ../clib/microlib/longlong.c              0x00000000   Number         0  llsshr.o ABSOLUTE
     ../clib/microlib/longlong.c              0x00000000   Number         0  llshl.o ABSOLUTE
+    ../clib/microlib/longlong.c              0x00000000   Number         0  llsshr.o ABSOLUTE
     ../clib/microlib/longlong.c              0x00000000   Number         0  llushr.o ABSOLUTE
-    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf8.o ABSOLUTE
-    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf7.o ABSOLUTE
-    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf6.o ABSOLUTE
-    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf4.o ABSOLUTE
     ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf3.o ABSOLUTE
-    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf2.o ABSOLUTE
-    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf1.o ABSOLUTE
-    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf0.o ABSOLUTE
-    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printfb.o ABSOLUTE
     ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf5.o ABSOLUTE
+    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf6.o ABSOLUTE
+    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf7.o ABSOLUTE
+    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf8.o ABSOLUTE
     ../clib/microlib/printf/printf.c         0x00000000   Number         0  printfa.o ABSOLUTE
+    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printfb.o ABSOLUTE
+    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf0.o ABSOLUTE
+    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf1.o ABSOLUTE
+    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf2.o ABSOLUTE
+    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf4.o ABSOLUTE
     ../clib/microlib/printf/stubs.s          0x00000000   Number         0  stubs.o ABSOLUTE
     ../clib/microlib/stdio/streams.c         0x00000000   Number         0  stdout.o ABSOLUTE
     ../clib/microlib/string/memcpy.c         0x00000000   Number         0  memcpya.o ABSOLUTE
@@ -1605,6 +1616,7 @@ Image Symbol Table
     ..\User\APP\APPMain.c                    0x00000000   Number         0  appmain.o ABSOLUTE
     ..\User\Framework\DRV8301.c              0x00000000   Number         0  drv8301.o ABSOLUTE
     ..\User\Framework\FOC.c                  0x00000000   Number         0  foc.o ABSOLUTE
+    ..\User\Framework\PositionPID.c          0x00000000   Number         0  positionpid.o ABSOLUTE
     ..\User\Framework\SpeedPID.c             0x00000000   Number         0  speedpid.o ABSOLUTE
     ..\User\Framework\Svpwm.c                0x00000000   Number         0  svpwm.o ABSOLUTE
     ..\User\Function\FunctionMain.c          0x00000000   Number         0  functionmain.o ABSOLUTE
@@ -2256,38 +2268,38 @@ Memory Map of the image
     Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
     0x08000000   0x08000000   0x00000188   Data   RO            3    RESET               startup_stm32f405xx.o
-    0x08000188   0x08000188   0x00000000   Code   RO         4276  * .ARM.Collect$$$$00000000  mc_w.l(entry.o)
-    0x08000188   0x08000188   0x00000004   Code   RO         4554    .ARM.Collect$$$$00000001  mc_w.l(entry2.o)
-    0x0800018c   0x0800018c   0x00000004   Code   RO         4557    .ARM.Collect$$$$00000004  mc_w.l(entry5.o)
-    0x08000190   0x08000190   0x00000000   Code   RO         4559    .ARM.Collect$$$$00000008  mc_w.l(entry7b.o)
-    0x08000190   0x08000190   0x00000000   Code   RO         4561    .ARM.Collect$$$$0000000A  mc_w.l(entry8b.o)
-    0x08000190   0x08000190   0x00000008   Code   RO         4562    .ARM.Collect$$$$0000000B  mc_w.l(entry9a.o)
-    0x08000198   0x08000198   0x00000004   Code   RO         4569    .ARM.Collect$$$$0000000E  mc_w.l(entry12b.o)
-    0x0800019c   0x0800019c   0x00000000   Code   RO         4564    .ARM.Collect$$$$0000000F  mc_w.l(entry10a.o)
-    0x0800019c   0x0800019c   0x00000000   Code   RO         4566    .ARM.Collect$$$$00000011  mc_w.l(entry11a.o)
-    0x0800019c   0x0800019c   0x00000004   Code   RO         4555    .ARM.Collect$$$$00002712  mc_w.l(entry2.o)
+    0x08000188   0x08000188   0x00000000   Code   RO         4324  * .ARM.Collect$$$$00000000  mc_w.l(entry.o)
+    0x08000188   0x08000188   0x00000004   Code   RO         4602    .ARM.Collect$$$$00000001  mc_w.l(entry2.o)
+    0x0800018c   0x0800018c   0x00000004   Code   RO         4605    .ARM.Collect$$$$00000004  mc_w.l(entry5.o)
+    0x08000190   0x08000190   0x00000000   Code   RO         4607    .ARM.Collect$$$$00000008  mc_w.l(entry7b.o)
+    0x08000190   0x08000190   0x00000000   Code   RO         4609    .ARM.Collect$$$$0000000A  mc_w.l(entry8b.o)
+    0x08000190   0x08000190   0x00000008   Code   RO         4610    .ARM.Collect$$$$0000000B  mc_w.l(entry9a.o)
+    0x08000198   0x08000198   0x00000004   Code   RO         4617    .ARM.Collect$$$$0000000E  mc_w.l(entry12b.o)
+    0x0800019c   0x0800019c   0x00000000   Code   RO         4612    .ARM.Collect$$$$0000000F  mc_w.l(entry10a.o)
+    0x0800019c   0x0800019c   0x00000000   Code   RO         4614    .ARM.Collect$$$$00000011  mc_w.l(entry11a.o)
+    0x0800019c   0x0800019c   0x00000004   Code   RO         4603    .ARM.Collect$$$$00002712  mc_w.l(entry2.o)
     0x080001a0   0x080001a0   0x00000024   Code   RO            4    .text               startup_stm32f405xx.o
-    0x080001c4   0x080001c4   0x00000078   Code   RO         4123    .text               arm_cortexM4lf_math.lib(arm_cos_f32.o)
-    0x0800023c   0x0800023c   0x00000094   Code   RO         4173    .text               arm_cortexM4lf_math.lib(arm_sin_f32.o)
-    0x080002d0   0x080002d0   0x00000062   Code   RO         4279    .text               mc_w.l(uldiv.o)
-    0x08000332   0x08000332   0x00000024   Code   RO         4281    .text               mc_w.l(memcpya.o)
-    0x08000356   0x08000356   0x00000024   Code   RO         4283    .text               mc_w.l(memseta.o)
-    0x0800037a   0x0800037a   0x00000026   Code   RO         4550    .text               mf_w.l(f2d.o)
-    0x080003a0   0x080003a0   0x00000030   Code   RO         4552    .text               mf_w.l(cdcmple.o)
-    0x080003d0   0x080003d0   0x0000002c   Code   RO         4571    .text               mc_w.l(uidiv.o)
-    0x080003fc   0x080003fc   0x0000001e   Code   RO         4573    .text               mc_w.l(llshl.o)
-    0x0800041a   0x0800041a   0x00000020   Code   RO         4575    .text               mc_w.l(llushr.o)
-    0x0800043a   0x0800043a   0x00000000   Code   RO         4577    .text               mc_w.l(iusefp.o)
-    0x0800043a   0x0800043a   0x0000014e   Code   RO         4578    .text               mf_w.l(dadd.o)
-    0x08000588   0x08000588   0x000000e4   Code   RO         4580    .text               mf_w.l(dmul.o)
-    0x0800066c   0x0800066c   0x000000de   Code   RO         4582    .text               mf_w.l(ddiv.o)
-    0x0800074a   0x0800074a   0x00000030   Code   RO         4584    .text               mf_w.l(dfixul.o)
+    0x080001c4   0x080001c4   0x00000078   Code   RO         4171    .text               arm_cortexM4lf_math.lib(arm_cos_f32.o)
+    0x0800023c   0x0800023c   0x00000094   Code   RO         4221    .text               arm_cortexM4lf_math.lib(arm_sin_f32.o)
+    0x080002d0   0x080002d0   0x00000062   Code   RO         4327    .text               mc_w.l(uldiv.o)
+    0x08000332   0x08000332   0x00000024   Code   RO         4329    .text               mc_w.l(memcpya.o)
+    0x08000356   0x08000356   0x00000024   Code   RO         4331    .text               mc_w.l(memseta.o)
+    0x0800037a   0x0800037a   0x00000026   Code   RO         4598    .text               mf_w.l(f2d.o)
+    0x080003a0   0x080003a0   0x00000030   Code   RO         4600    .text               mf_w.l(cdcmple.o)
+    0x080003d0   0x080003d0   0x0000002c   Code   RO         4619    .text               mc_w.l(uidiv.o)
+    0x080003fc   0x080003fc   0x0000001e   Code   RO         4621    .text               mc_w.l(llshl.o)
+    0x0800041a   0x0800041a   0x00000020   Code   RO         4623    .text               mc_w.l(llushr.o)
+    0x0800043a   0x0800043a   0x00000000   Code   RO         4625    .text               mc_w.l(iusefp.o)
+    0x0800043a   0x0800043a   0x0000014e   Code   RO         4626    .text               mf_w.l(dadd.o)
+    0x08000588   0x08000588   0x000000e4   Code   RO         4628    .text               mf_w.l(dmul.o)
+    0x0800066c   0x0800066c   0x000000de   Code   RO         4630    .text               mf_w.l(ddiv.o)
+    0x0800074a   0x0800074a   0x00000030   Code   RO         4632    .text               mf_w.l(dfixul.o)
     0x0800077a   0x0800077a   0x00000002   PAD
-    0x0800077c   0x0800077c   0x00000030   Code   RO         4586    .text               mf_w.l(cdrcmple.o)
-    0x080007ac   0x080007ac   0x00000024   Code   RO         4588    .text               mc_w.l(init.o)
-    0x080007d0   0x080007d0   0x00000024   Code   RO         4590    .text               mc_w.l(llsshr.o)
-    0x080007f4   0x080007f4   0x000000ba   Code   RO         4592    .text               mf_w.l(depilogue.o)
-    0x080008ae   0x080008ae   0x00000056   Code   RO         4602    .text               mc_w.l(__dczerorl2.o)
+    0x0800077c   0x0800077c   0x00000030   Code   RO         4634    .text               mf_w.l(cdrcmple.o)
+    0x080007ac   0x080007ac   0x00000024   Code   RO         4636    .text               mc_w.l(init.o)
+    0x080007d0   0x080007d0   0x00000024   Code   RO         4638    .text               mc_w.l(llsshr.o)
+    0x080007f4   0x080007f4   0x000000ba   Code   RO         4640    .text               mf_w.l(depilogue.o)
+    0x080008ae   0x080008ae   0x00000056   Code   RO         4650    .text               mc_w.l(__dczerorl2.o)
     0x08000904   0x08000904   0x00000018   Code   RO         3519    i.ADCDMAIRQHandler  adc1.o
     0x0800091c   0x0800091c   0x00000014   Code   RO         3520    i.ADCDMAStart       adc1.o
     0x08000930   0x08000930   0x0000006e   Code   RO          506    i.ADC_DMAConvCplt   stm32f4xx_hal_adc.o
@@ -2402,7 +2414,7 @@ Memory Map of the image
     0x08002d90   0x08002d90   0x00000016   Code   RO         3610    i.PerDriverMain_Init  perdrivermain.o
     0x08002da6   0x08002da6   0x00000002   PAD
     0x08002da8   0x08002da8   0x00000058   Code   RO         3611    i.PerDriverMain_Loop  perdrivermain.o
-    0x08002e00   0x08002e00   0x00000094   Code   RO         4010    i.SEGGER_RTT_Write  segger_rtt.o
+    0x08002e00   0x08002e00   0x00000094   Code   RO         4058    i.SEGGER_RTT_Write  segger_rtt.o
     0x08002e94   0x08002e94   0x00000002   Code   RO          379    i.SVC_Handler       stm32f4xx_it.o
     0x08002e96   0x08002e96   0x00000018   Code   RO         3818    i.SetCurrentPIDParams  foc.o
     0x08002eae   0x08002eae   0x0000000a   Code   RO         3819    i.SetCurrentPIDTar  foc.o
@@ -2452,25 +2464,25 @@ Memory Map of the image
     0x08003818   0x08003818   0x00000028   Code   RO         3364    i.TimerEncoderReset  tim3encoder.o
     0x08003840   0x08003840   0x00000002   Code   RO          382    i.UsageFault_Handler  stm32f4xx_it.o
     0x08003842   0x08003842   0x00000002   PAD
-    0x08003844   0x08003844   0x00000020   Code   RO         4520    i.__0printf         mc_w.l(printfa.o)
+    0x08003844   0x08003844   0x00000020   Code   RO         4568    i.__0printf         mc_w.l(printfa.o)
     0x08003864   0x08003864   0x00000020   Code   RO         1538    i.__NVIC_SetPriority  stm32f4xx_hal_cortex.o
-    0x08003884   0x08003884   0x0000000e   Code   RO         4596    i.__scatterload_copy  mc_w.l(handlers.o)
-    0x08003892   0x08003892   0x00000002   Code   RO         4597    i.__scatterload_null  mc_w.l(handlers.o)
-    0x08003894   0x08003894   0x0000000e   Code   RO         4598    i.__scatterload_zeroinit  mc_w.l(handlers.o)
+    0x08003884   0x08003884   0x0000000e   Code   RO         4644    i.__scatterload_copy  mc_w.l(handlers.o)
+    0x08003892   0x08003892   0x00000002   Code   RO         4645    i.__scatterload_null  mc_w.l(handlers.o)
+    0x08003894   0x08003894   0x0000000e   Code   RO         4646    i.__scatterload_zeroinit  mc_w.l(handlers.o)
     0x080038a2   0x080038a2   0x00000002   PAD
-    0x080038a4   0x080038a4   0x00000184   Code   RO         4527    i._fp_digits        mc_w.l(printfa.o)
-    0x08003a28   0x08003a28   0x000006b4   Code   RO         4528    i._printf_core      mc_w.l(printfa.o)
-    0x080040dc   0x080040dc   0x00000024   Code   RO         4529    i._printf_post_padding  mc_w.l(printfa.o)
-    0x08004100   0x08004100   0x0000002e   Code   RO         4530    i._printf_pre_padding  mc_w.l(printfa.o)
-    0x0800412e   0x0800412e   0x00000016   Code   RO         4012    i.fputc             segger_rtt.o
+    0x080038a4   0x080038a4   0x00000184   Code   RO         4575    i._fp_digits        mc_w.l(printfa.o)
+    0x08003a28   0x08003a28   0x000006b4   Code   RO         4576    i._printf_core      mc_w.l(printfa.o)
+    0x080040dc   0x080040dc   0x00000024   Code   RO         4577    i._printf_post_padding  mc_w.l(printfa.o)
+    0x08004100   0x08004100   0x0000002e   Code   RO         4578    i._printf_pre_padding  mc_w.l(printfa.o)
+    0x0800412e   0x0800412e   0x00000016   Code   RO         4060    i.fputc             segger_rtt.o
     0x08004144   0x08004144   0x0000002a   Code   RO           15    i.main              main.o
     0x0800416e   0x0800416e   0x00000008   Data   RO         1255    .constdata          stm32f4xx_hal_dma.o
     0x08004176   0x08004176   0x00000010   Data   RO         3165    .constdata          system_stm32f4xx.o
     0x08004186   0x08004186   0x00000002   PAD
-    0x08004188   0x08004188   0x00000804   Data   RO         4253    .constdata          arm_cortexM4lf_math.lib(arm_common_tables.o)
-    0x0800498c   0x0800498c   0x00000009   Data   RO         4015    .conststring        segger_rtt.o
+    0x08004188   0x08004188   0x00000804   Data   RO         4301    .constdata          arm_cortexM4lf_math.lib(arm_common_tables.o)
+    0x0800498c   0x0800498c   0x00000009   Data   RO         4063    .conststring        segger_rtt.o
     0x08004995   0x08004995   0x00000003   PAD
-    0x08004998   0x08004998   0x00000020   Data   RO         4594    Region$$Table       anon$$obj.o
+    0x08004998   0x08004998   0x00000020   Data   RO         4642    Region$$Table       anon$$obj.o
 
 
     Execution Region RW_IRAM2 (Exec base: 0x10000000, Load base: 0x08004a28, Size: 0x00000000, Max: 0x00010000, ABSOLUTE)
@@ -2492,14 +2504,14 @@ Memory Map of the image
     0x20000088   COMPRESSED   0x00000098   Data   RW         3685    .data               focconfig.o
     0x20000120   COMPRESSED   0x00000044   Data   RW         3771    .data               speedpidconfig.o
     0x20000164   COMPRESSED   0x00000004   Data   RW         3962    .data               speedpid.o
-    0x20000168   COMPRESSED   0x00000078   Data   RW         4016    .data               segger_rtt.o
-    0x200001e0   COMPRESSED   0x00000004   Data   RW         4570    .data               mc_w.l(stdout.o)
+    0x20000168   COMPRESSED   0x00000078   Data   RW         4064    .data               segger_rtt.o
+    0x200001e0   COMPRESSED   0x00000004   Data   RW         4618    .data               mc_w.l(stdout.o)
     0x200001e4        -       0x000000a8   Zero   RW          200    .bss                adc.o
     0x2000028c        -       0x00000058   Zero   RW          266    .bss                spi.o
     0x200002e4        -       0x00000080   Zero   RW          312    .bss                tim.o
     0x20000364        -       0x00000018   Zero   RW         3522    .bss                adc1.o
-    0x2000037c        -       0x00000400   Zero   RW         4013    .bss                segger_rtt.o
-    0x2000077c        -       0x00000010   Zero   RW         4014    .bss                segger_rtt.o
+    0x2000037c        -       0x00000400   Zero   RW         4061    .bss                segger_rtt.o
+    0x2000077c        -       0x00000010   Zero   RW         4062    .bss                segger_rtt.o
     0x2000078c   COMPRESSED   0x00000004   PAD
     0x20000790        -       0x00000400   Zero   RW            1    STACK               startup_stm32f405xx.o
 

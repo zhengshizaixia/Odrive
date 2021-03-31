@@ -1069,6 +1069,16 @@
               <FileType>5</FileType>
               <FilePath>..\User\Framework\SpeedPID.h</FilePath>
             </File>
+            <File>
+              <FileName>PositionPID.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\User\Framework\PositionPID.c</FilePath>
+            </File>
+            <File>
+              <FileName>PositionPID.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\User\Framework\PositionPID.h</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>

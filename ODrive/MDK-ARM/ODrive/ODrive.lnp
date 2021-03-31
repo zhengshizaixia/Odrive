@@ -47,6 +47,7 @@
 "odrive\svpwm.o"
 "odrive\drv8301.o"
 "odrive\speedpid.o"
+"odrive\positionpid.o"
 "odrive\segger_rtt.o"
 "odrive\segger_rtt_printf.o"
 --library_type=microlib --strict --scatter "ODrive\ODrive.sct"
